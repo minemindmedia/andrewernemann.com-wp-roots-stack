@@ -22,3 +22,15 @@ const routes = new Router({
 
 // Load Events
 jQuery(document).ready(() => routes.loadEvents());
+
+// import then needed Font Awesome functionality
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+// import the Facebook and Twitter icons
+import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPlayCircle } from '@fortawesome/free-regular-svg-icons';
+
+// add the imported icons to the library
+library.add(faPhoneAlt, faEnvelope, faPlayCircle);
+
+// tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup
+dom.watch();

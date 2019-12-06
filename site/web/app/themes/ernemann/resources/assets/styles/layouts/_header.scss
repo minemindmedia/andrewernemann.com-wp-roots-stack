@@ -1,11 +1,16 @@
-.banner .nav {
-  @apply list-reset flex flex-wrap;
-}
+header {
+  .menu-bars {
+    span {
+      height: 5px;
+      margin-bottom: 6px;
+    }
+  }
 
-.banner .nav a {
-  @apply inline-block px-4 py-2 border-none;
-
-  &:hover {
-    color: darken(#525ddc, 30%);
+  .contact {
+    svg {
+      font-size: 1.5em;
+      color: white;
+      opacity: 0.75;
+    }
   }
 }
