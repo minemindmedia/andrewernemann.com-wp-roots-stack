@@ -39,6 +39,7 @@ class App extends Controller
             'phone' => get_field('phone_icon', 'options'),
             'email' => get_field('email_icon', 'options'),
             'close' => get_field('close_icon', 'options'),
+            'overlay' => get_field('overlay_color', 'options'),
         );
     }
     public function headerhero()

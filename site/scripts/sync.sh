@@ -10,7 +10,7 @@ DEVSITE="http://trellis.andrewernemann.build/"
 PRODDIR="web@andrewernemann.com:/srv/www/andrewernemann.com/shared/uploads/"
 PRODSITE="https://andrewernemann.com"
 
-STAGDIR="web@staging.andrewernemann.com:/srv/www/andrewernemann.com/shared/uploads/"
+STAGDIR="web@ae.joshuabusnelli.com:/srv/www/andrewernemann.com/shared/uploads/"
 STAGSITE="https://ae.joshuabusnelli.com"
 
 FROM=$1
