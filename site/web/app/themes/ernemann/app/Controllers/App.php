@@ -30,4 +30,24 @@ class App extends Controller
         }
         return get_the_title();
     }
+    public function header()
+    {
+        return (object)array(
+            'logo' => get_field('logo', 'options'),
+            'hamburger' => get_field('hamburger_menu', 'options'),
+            'arrow' => get_field('header_footer_arrow', 'options'),
+            'phone' => get_field('phone_icon', 'options'),
+            'email' => get_field('email_icon', 'options'),
+            'close' => get_field('close_icon', 'options'),
+        );
+    }
+    public function headerhero()
+    {
+        $field = get_field('header_hero');
+        return (object) [
+            'background'     => $field['background_image'] ?? null,
+            'heading'        => $field['heading'] ?? null,
+            'subheading'     => $field['subheading'] ?? null,
+        ];
+    }
 }

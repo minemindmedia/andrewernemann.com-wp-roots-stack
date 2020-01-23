@@ -44,7 +44,8 @@ View the full documentation at https://tailwindcss.com.
 */
 
 let colors = {
-  'primary': '#525ddc',
+  'ae-green-bg': 'rgba(65, 95, 102, .65)',
+  'primary': '#525ddc', 
 
   'transparent': 'transparent',
 
@@ -799,6 +800,7 @@ module.exports = {
     '0': '0',
     '25': '.25',
     '50': '.5',
+    '60': '.60',
     '75': '.75',
     '100': '1',
   },
