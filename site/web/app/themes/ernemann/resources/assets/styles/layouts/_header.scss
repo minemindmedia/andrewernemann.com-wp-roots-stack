@@ -8,8 +8,12 @@ nav {
   }
 }
 
-section.page-header {
-  margin-top: 20%;
+.header-content {
+  top: 8rem;
+
+  @media (min-width: 1280px) {
+    top: 15rem;
+  }
 }
 
 .header-footer {
