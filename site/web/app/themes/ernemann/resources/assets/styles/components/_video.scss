@@ -2,6 +2,12 @@ video {
   outline: none !important;
 }
 
+.vjs-control-bar {
+  button {
+    outline: none !important;
+  }
+}
+
 .vjs-big-play-button {
   background-color: transparent !important;
   width: 120px !important;
