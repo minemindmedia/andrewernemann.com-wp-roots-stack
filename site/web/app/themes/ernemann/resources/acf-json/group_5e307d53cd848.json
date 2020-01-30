@@ -187,6 +187,30 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_5e31d2169add0",
+                    "label": "Video Poster",
+                    "name": "video_poster",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
                     "key": "field_5e30abf517353",
                     "label": "MP4 Video",
                     "name": "mp4_video",
@@ -347,5 +371,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1580250572
+    "modified": 1580323371
 }

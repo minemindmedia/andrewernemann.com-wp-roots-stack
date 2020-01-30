@@ -10,7 +10,7 @@
         </a>
         @endif
       </div>
-      <div class="flex-1 px-4 md:py-2 m-2 md:-ml-10">
+      <div class="flex-1 px-4 md:py-2 m-2 mr-20">
         <button class="modal-open block ml-auto mr-auto outline-none">
           <img src="{{ $header->hamburger }}" class="block w-6 md:w-8 m-auto mt-3 outline-none">
         </button>

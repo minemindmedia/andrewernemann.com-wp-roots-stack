@@ -1,3 +1,4 @@
+import videojs from 'video.js';
 export default {
   init() {
     // JavaScript to be fired on all pages
@@ -41,5 +42,15 @@ export default {
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
+    var video = videojs('home-player');
+    video.on('pause', function() {
+      this.bigPlayButton.show();
+
+      // Now the issue is that we need to hide it again if we start playing
+      // So every time we do this, we can create a one-time listener for play events.
+      video.one('play', function() {
+        this.bigPlayButton.hide();
+      });
+    });
   },
 };

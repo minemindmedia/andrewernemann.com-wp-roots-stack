@@ -1,0 +1,41 @@
+video {
+  outline: none !important;
+}
+
+.vjs-big-play-button {
+  background-color: transparent !important;
+  width: 120px !important;
+  height: 120px !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-10%, -30%) !important;
+  background-position: center !important;
+  background-image: url("../images/play-button.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 110px !important;
+  border: none !important; // @stylint ignore
+  box-shadow: none !important; // @stylint ignore
+  outline: none !important;
+
+  &::before {
+    content: "" !important;
+    display: none !important;
+  }
+
+  &:hover {
+    background-color: transparent !important;
+    opacity: 0.7 !important;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+  display: block;
+}
+
+.vjs-paused .vjs-control-bar {
+  opacity: 0;
+}

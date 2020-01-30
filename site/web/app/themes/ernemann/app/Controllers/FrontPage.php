@@ -30,4 +30,13 @@ class FrontPage extends Controller
             'background'     => $field['background_image'] ?? null,
         ];
     }
+    public function videosection()
+    {
+        $field = get_field('video_section');
+        return (object) [
+            'mp4'     => $field['mp4_video'] ?? null,
+            'webm'        => $field['webm_video'] ?? null,
+            'poster'        => $field['video_poster'] ?? null,
+        ];
+    }
 }

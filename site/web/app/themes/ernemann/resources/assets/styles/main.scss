@@ -24,6 +24,7 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~video.js/dist/video-js";
 
 /**
  * This injects any component classes registered by Tailwind plugins.
@@ -40,6 +41,7 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/video";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
