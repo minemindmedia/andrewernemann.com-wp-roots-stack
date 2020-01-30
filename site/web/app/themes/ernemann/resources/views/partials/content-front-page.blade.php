@@ -18,7 +18,7 @@
 
 
 
-<div class="w-2/5 mx-auto mb-16 home-video">
+<div class="md:w-1/3 lg:w-2/5 mx-auto mb-16 home-video">
 
   <video id="home-player"
   class="video-js vjs-default-skin vjs-big-play-centered"
