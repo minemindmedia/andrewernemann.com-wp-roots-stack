@@ -1,26 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply mb-2 leading-tight;
-}
-
-p {
-  @apply mb-3 leading-normal;
-}
-
-a {
-  @apply text-primary no-underline border-b border-transparent;
-
-  transition: 0.2s ease;
-
-  &:hover {
-    @apply border-primary;
-  }
-}
-
 /* Menu Modal */
 
 .modal {
@@ -29,6 +6,12 @@ a {
 
 body {
   font-family: urw-din, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body.modal-active {
@@ -45,3 +28,32 @@ body.modal-active {
 .mt-128 {
   margin-top: 32rem;
 }
+
+/* Carousel Bullets */
+
+.slick-dots {
+  li {
+    margin: 0 2px;
+
+    button {
+      &::before {
+        color: black !important;
+        width: 20px !important;
+        height: 20px !important;
+        font-size: 12px !important;
+      }
+    }
+  }
+
+  li.slick-active {
+    button {
+      &::before {
+        color: red !important;
+        width: 20px !important;
+        height: 20px !important;
+        font-size: 12px !important;
+      }
+    }
+  }
+}
+

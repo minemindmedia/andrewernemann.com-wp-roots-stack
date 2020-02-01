@@ -35,3 +35,71 @@ if( function_exists('acf_add_options_page') )
 	));
 	
 }
+
+/**
+ * Testimonials
+ */
+add_action('admin_head', 'hide_testimonials_title_input');
+function hide_testimonials_title_input() {
+  $screen = get_current_screen();
+  if ($screen->id != 'testimonials') {
+    return;
+  }
+  ?>
+    <style type="text/css">
+      #post-body-content #titlediv #titlewrap {
+        display: none;
+      }
+    </style>
+  <?php 
+}
+function testimonials_title( $value, $post_id, $field ) {
+	if ( get_post_type( $post_id ) == 'testimonials' ) {
+
+		$new_title = get_field('testimonial_author', $post_id) . ' ' . $value;
+		$new_slug = sanitize_title( $new_title );
+
+		// update post
+		wp_update_post( array(
+			'ID'         => $post_id,
+			'post_title' => $new_title,
+			'post_name'  => $new_slug,
+			) );
+	}
+	return $value;
+}
+add_filter( 'acf/update_value/name=testimonial_author', 'testimonials_title', 10, 3 );
+
+/**
+ * Press
+ */
+add_action('admin_head', 'hide_press_title_input');
+function hide_press_title_input() {
+  $screen = get_current_screen();
+  if ($screen->id != 'press') {
+    return;
+  }
+  ?>
+    <style type="text/css">
+      #post-body-content #titlediv #titlewrap {
+        display: none;
+      }
+    </style>
+  <?php 
+}
+function press_title( $value, $post_id, $field ) {
+	if ( get_post_type( $post_id ) == 'press' ) {
+
+		$new_title = get_field('press_heading', $post_id) . ' ' . $value;
+		$new_slug = sanitize_title( $new_title );
+
+		// update post
+		wp_update_post( array(
+			'ID'         => $post_id,
+			'post_title' => $new_title,
+			'post_name'  => $new_slug,
+			) );
+	}
+	return $value;
+}
+add_filter( 'acf/update_value/name=press_heading', 'press_title', 10, 3 );

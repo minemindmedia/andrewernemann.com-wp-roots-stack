@@ -1,5 +1,5 @@
 @include('partials.menu-modal')
-<div class="text-white mt-0 border border-blue-800 py-0 w-screen h-screen bg-cover" style="background-image:url('{!! $headerhero->background !!}')">
+<div class="text-white mt-0 py-0 w-full bg-cover" style="background-image:url('{!! $headerhero->background !!}')">
   <div class="h-screen bg-ae-green-bg">
     <nav class="flex md:pt-10">
       <div class="w-1/3 px-4 py-2 m-2 md:pl-20">

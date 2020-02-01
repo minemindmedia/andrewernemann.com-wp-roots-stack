@@ -45,25 +45,26 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
   'ae-green-bg': 'rgba(65, 95, 102, .65)',
-  'primary': '#525ddc', 
+  
+  'primary': '#525ddc',
 
   'transparent': 'transparent',
 
   'black': '#22292f',
-  'grey-darkest': '#3d4852',
+  'grey-darkest': '#231F20',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
+  'grey': '#4D4D4F',
   'grey-light': '#dae1e7',
   'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  'grey-lightest': '#F4F2ED',
   'white': '#ffffff',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
   'red-dark': '#cc1f1a',
   'red': '#e3342f',
-  'red-light': '#ef5753',
+  'red-light': '#F04E23',
   'red-lighter': '#f9acaa',
   'red-lightest': '#fcebea',
 
@@ -696,6 +697,9 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
+    '48': '12rem',
+    '56': '14rem',
+    '64': '16rem',
   },
 
 

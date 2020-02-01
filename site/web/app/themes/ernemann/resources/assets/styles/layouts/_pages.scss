@@ -4,3 +4,45 @@
     font-size: 6em;
   }
 }
+
+.home-property-video {
+  .details {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.press-slider {
+  button.slick-arrow {
+    width: 80px;
+    height: 80px;
+  }
+
+  button.slick-next {
+    right: -100px;
+  }
+
+  button.slick-prev {
+    left: -100px;
+  }
+
+  .slick-next::before {
+    background-image: url("../images/next-arrow.svg");
+    background-size: 80px 80px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    content: "";
+    bottom: 200px;
+  }
+
+  .slick-prev::before {
+    background-image: url("../images/prev-arrow.svg");
+    background-size: 80px 80px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    content: "";
+    bottom: 200px;
+  }
+}
