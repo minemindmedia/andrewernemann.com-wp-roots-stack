@@ -95,7 +95,7 @@
     <div class="flex">
       <div class="m-8 md:m-16 p-8 md:p-16 border border-white text-center">
         <h2 class="uppercase text-3xl mb-6">{{ $oneupsectiontwo->heading }}</h2>
-        <p class="text-md md:text-2xl mb-8 mx-64">{{ $oneupsectiontwo->content }}</p>
+        <p class="text-md md:text-2xl mb-8 lg:mx-64">{{ $oneupsectiontwo->content }}</p>
         <a href="{{ $oneupsectiontwo->buttonLink }}">
         <button class="py-3 px-8 border border-white bg-transparent uppercase text-lg text-white">{{ $oneupsectiontwo->buttonText }}</button> 
         </a>
@@ -103,9 +103,9 @@
     </div>
   </div>
 </div>
-<div class="text-grey py-0 w-1/2 my-8 mx-auto">
+<div class="text-grey py-0 lg:w-1/2 lg:my-8 mx-auto">
   <div class="flex">
-    <div class="m-8 px-8 py-24 border border-grey-light text-center">
+    <div class="m-8 px-4 py-8 lg:py-24 border border-grey-light text-center">
       <h2 class="uppercase text-3xl mb-6">{{ $oneupsectionthree->heading }}</h2>
       <p class="text-md md:text-2xl mb-8">{{ $oneupsectionthree->content }}</p>
       <a href="{{ $oneupsectionthree->buttonLink }}">

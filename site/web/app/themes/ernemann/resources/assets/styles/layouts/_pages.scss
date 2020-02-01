@@ -14,35 +14,75 @@
 
 .press-slider {
   button.slick-arrow {
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
   }
 
   button.slick-next {
-    right: -100px;
+    right: 0;
+
+    @media (min-width: 640px) {
+      right: -30px;
+    }
+
+    @media (min-width: 1024px) {
+      right: -70px;
+    }
   }
 
   button.slick-prev {
-    left: -100px;
+    left: 0;
+
+    @media (min-width: 640px) {
+      left: -50px;
+    }
+
+    @media (min-width: 1024px) {
+      left: -120px;
+    }
   }
 
   .slick-next::before {
     background-image: url("../images/next-arrow.svg");
-    background-size: 80px 80px;
+    background-size: 20px 20px;
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
     content: "";
     bottom: 200px;
+
+    @media (min-width: 640px) {
+      background-size: 40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (min-width: 1024px) {
+      background-size: 80px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   .slick-prev::before {
     background-image: url("../images/prev-arrow.svg");
-    background-size: 80px 80px;
+    background-size: 20px 20px;
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: 20px;
+    height: 20px;
     content: "";
     bottom: 200px;
+
+    @media (min-width: 640px) {
+      background-size: 40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (min-width: 1024px) {
+      background-size: 80px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }
