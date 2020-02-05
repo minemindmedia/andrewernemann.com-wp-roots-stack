@@ -1,0 +1,165 @@
+.testimonial-slider {
+  display: block;
+
+  .slick-dots {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 22px;
+        height: 24px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 10px !important;
+          height: 10px !important;
+          -moz-border-radius: 7.5px;
+          -webkit-border-radius: 7.5px;
+          border-radius: 50px;
+          background-color: #dae1e7;
+        }
+      }
+    }
+
+    li.slick-active {
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 22px;
+        height: 24px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 10px !important;
+          height: 10px !important;
+          -moz-border-radius: 7.5px;
+          -webkit-border-radius: 7.5px;
+          border-radius: 50px;
+          background-color: #e3342f;
+        }
+      }
+    }
+  }
+}
+
+.press-slider {
+  .slick-slide {
+    outline: none;
+  }
+
+  button.slick-next {
+    visibility: collapse;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      right: -50px;
+      visibility: visible;
+      background-image: url("../images/next-arrow.svg");
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      content: "";
+      bottom: 200px;
+
+      @media (min-width: 640px) {
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+      }
+
+      @media (min-width: 768px) {
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        right: -75px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        right: -100px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+        right: -100px;
+      }
+    }
+  }
+
+  button.slick-prev {
+    visibility: collapse;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      left: -50px;
+      visibility: visible;
+      background-image: url("../images/prev-arrow.svg");
+      background-size: 20px 20px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      content: "";
+      bottom: 200px;
+
+      @media (min-width: 640px) {
+        width: 40px;
+        height: 40px;
+        background-size: 40px 40px;
+      }
+
+      @media (min-width: 768px) {
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        left: -75px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        left: -100px;
+      }
+
+      @media (min-width: 1280px) {
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+        left: -100px;
+      }
+    }
+  }
+}

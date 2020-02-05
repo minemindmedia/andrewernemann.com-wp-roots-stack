@@ -87,6 +87,7 @@
     "@glidejs/glide": "^3.4.1",
     "glide": "^0.2.0",
     "jquery": "^3.3.1",
+    "siema": "^1.5.1",
     "slick-carousel": "^1.8.1",
     "slider-pro": "^1.5.0",
     "video.js": "^7.6.6",

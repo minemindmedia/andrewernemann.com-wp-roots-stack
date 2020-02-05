@@ -103,3 +103,46 @@ function press_title( $value, $post_id, $field ) {
 	return $value;
 }
 add_filter( 'acf/update_value/name=press_heading', 'press_title', 10, 3 );
+
+/**
+ * Properties
+ */
+add_action('admin_head', 'hide_property_title_input');
+function hide_property_title_input() {
+  $screen = get_current_screen();
+  if ($screen->id != 'properties') {
+    return;
+  }
+  ?>
+    <style type="text/css">
+      #post-body-content #titlediv #titlewrap {
+        display: none;
+      }
+    </style>
+  <?php 
+}
+function property_title( $value, $post_id, $field ) {
+	if ( get_post_type( $post_id ) == 'properties' ) {
+
+		$new_title = get_field('property_address', $post_id) . ' ' . $value;
+		$new_slug = sanitize_title( $new_title );
+
+		// update post
+		wp_update_post( array(
+			'ID'         => $post_id,
+			'post_title' => $new_title,
+			'post_name'  => $new_slug,
+			) );
+	}
+	return $value;
+}
+add_filter( 'acf/update_value/name=property_address', 'property_title', 10, 3 );
+
+/**
+ * Google Maps
+ */
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyB6Wll1w6ospTf_vhgfQmnrjpYi0567VFs';
+    return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

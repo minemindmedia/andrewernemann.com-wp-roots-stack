@@ -66,7 +66,7 @@
     <h4 class="text-2xl text-white uppercase font-normal mb-8">$24,750,000</h4>
     <button class="py-3 px-8 border border-white bg-transparent uppercase text-lg text-white">Learn more</button> 
   </div>
-  <video id="home-player"
+  <video id="video-player"
     class="video-js vjs-default-skin vjs-big-play-centered" 
     controls
     preload="auto"
@@ -115,7 +115,7 @@
   </div>
 </div>
 <div class="lg:flex p-8 md:p-16 text-center text-grey bg-grey-lightest">
-  <div class="w-full px-4 md:px-8 py-8 lg:py-32 border border-solid">
+  <div class="w-full px-4 md:px-8 py-8 lg:py-16 border border-solid">
     <div class="press-slider w-4/5 mx-auto">
       @foreach($press as $article)
         <div class="px-8">

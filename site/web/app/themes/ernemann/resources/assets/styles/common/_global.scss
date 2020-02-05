@@ -9,11 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body.modal-active {
   overflow-x: hidden;
   overflow-y: hidden !important;

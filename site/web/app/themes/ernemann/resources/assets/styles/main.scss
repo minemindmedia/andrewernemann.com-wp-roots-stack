@@ -26,7 +26,6 @@
 // @import "~some-node-module";
 @import "~video.js/dist/video-js";
 @import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
 
 /**
  * This injects any component classes registered by Tailwind plugins.
@@ -50,6 +49,8 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "layouts/home";
+@import "layouts/properties";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

@@ -29,6 +29,10 @@
       "url": "https://wpackagist.org"
     },
     {
+			"type": "composer",
+			"url": "https://satispress.minemindmedia.com/satispress/"
+		},
+    {
         "type": "package",
         "package": {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -56,7 +60,8 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "vlucas/phpdotenv": "^3.4.0",
-    "wpackagist-plugin/svg-support": "2.3.17"
+    "wpackagist-plugin/svg-support": "2.3.17",
+    "satispress/soil": "3.8.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.4.2",

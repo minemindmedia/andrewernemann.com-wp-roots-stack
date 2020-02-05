@@ -18,7 +18,6 @@ export default {
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
-            dots: true,
           },
         },
         {
@@ -39,6 +38,12 @@ export default {
         // settings: "unslick"
         // instead of a settings object
       ],
+    });
+    $('.flexslider').slick({
+      dots: true,
+      speed: 500,
+      adaptiveHeight: true,
+      arrows: false,
     });
   },
   finalize() {
