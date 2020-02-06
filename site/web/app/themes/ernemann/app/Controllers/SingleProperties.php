@@ -73,5 +73,26 @@ class SingleProperties extends Controller
         ];
     }
 
+    public function schedule()
+    {
+        $field = get_field('schedule_showing');
+        return (object) [
+            'heading'     => $field['heading'] ?? null,
+            'content'     => $field['content'] ?? null,
+
+        ];
+    }
+
+    public function location()
+    {
+        $field = get_field('location');
+        return (object) [
+            'heading'     => $field['heading'] ?? null,
+            'directions'     => $field['directions'] ?? null,
+            'link'     => $field['directions_link'] ?? null,
+            'bkg'     => $field['background'] ?? null,
+        ];
+    }
+
 
 }

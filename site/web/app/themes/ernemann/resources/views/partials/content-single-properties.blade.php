@@ -132,9 +132,8 @@
             @endwhile
             @else
               <p class="text-center text-xlg">Sorry, there are no documents associated with this property.</p>
-            </div>
           @endif
-
+        </div>
         </div>
       </div>
     </div>
@@ -143,14 +142,43 @@
 
 <div class="lg:flex p-8 md:p-16 text-center text-grey bg-grey-lightest">
   <div class="w-full px-4 md:px-8 py-8 lg:py-32 border border-solid border-white">
-    <div class="press-slider w-4/5 mx-auto">
+    <div class="w-4/5 mx-auto">
       <a href="" class="inline-block text-lg sm:text-4xl font-normal no-underline text-red px-16 py-8 border border-solid border-red capitalize mb-12">{{ $buy_now->heading }}</a>
       <p class="text-center text-2xl capitalize leading-normal">{!! $buy_now->content !!}</p> 
     </div>
   </div>
 </div>
 
+<div class="p-8 md:p-16 text-grey bg-white">
+  <div class="flex w-full px-4 md:px-16 py-8 lg:py-16 border border-solid">
+    <div class="w-1/2 text-center">
+    <h2 class="uppercase text-3xl mb-8">{{ $schedule->heading }}</h2>  
+    <p class="w-2/3 mx-auto text-2xl leading-normal">{{ $schedule->content }}</p>
+    </div>
+    <div class="w-1/2">
+    {!! do_shortcode('[ninja_form id=2]') !!}
+    </div>
+  </div>
+</div>
 
+<div class="lg:flex text-center text-grey">
+  <div class="w-1/2" style="background-image: url('{!! $location->bkg !!}')">
+    <div class="h-full bg-ae-green-bg">
+    <div class="w-full p-16  ">
+      <div class="border border-solid text-white p-20">
+      <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $location->heading }}</h2>
+      <p class="text-md md:text-2xl mb-8 leading-normal">{{ $property_details->address }} <br> {{ $property_details->city }}, {{ $property_details->state }} {{ $property_details->zip }}</p>
+      <a href="{{ $location->link }}">
+        <button class=" py-3 px-8 border border-white uppercase text-lg text-white">Directions</button>
+      </a>
+    </div>
+    </div>  
+    </div>
+  </div>
+  <div class="w-1/2">
+  
+  </div>
+</div>
 
 
 </article>
