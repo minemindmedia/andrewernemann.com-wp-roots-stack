@@ -46,10 +46,16 @@ export default {
     var video = videojs('video-player');
     video.on('pause', function() {
       this.bigPlayButton.show();
-
-      // Now the issue is that we need to hide it again if we start playing
-      // So every time we do this, we can create a one-time listener for play events.
+      
       video.one('play', function() {
+        this.bigPlayButton.hide();
+      });
+    });
+    var videoxxx = videojs('video-playerxxx');
+    video.on('pause', function() {
+      this.bigPlayButton.show();
+      
+      videoxxx.one('play', function() {
         this.bigPlayButton.hide();
       });
     });

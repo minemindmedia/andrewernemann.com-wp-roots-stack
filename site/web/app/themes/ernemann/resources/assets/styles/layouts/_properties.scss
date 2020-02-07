@@ -1,4 +1,38 @@
+/* Archive Properties */
 
+.thumbnail-footer {
+  bottom: 0;
+
+  p {
+    span {
+      position: relative;
+    }
+
+    span.last {
+      &::after {
+        display: none;
+      }
+    }
+
+    span::after {
+      content: "";
+      height: 1.3rem;
+      width: 2px;
+      position: absolute;
+      right: -1.4rem;
+      top: 0.4rem;
+      background-color: #fff;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 45px;
+    height: 45px;
+  }
+}
 
 /* Single Property */
 

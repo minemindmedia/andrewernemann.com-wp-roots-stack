@@ -9,7 +9,7 @@
     {!! get_search_form(false) !!}
   @endif
   
-  <div class="flex -mx-8 mt-16">
+  <div class="flex flex-wrap -mx-8 my-4 lg:my-8">
     @while (have_posts()) @php the_post() @endphp
       @include('partials.content-'.get_post_type())
     @endwhile
