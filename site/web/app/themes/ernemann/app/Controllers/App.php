@@ -51,4 +51,14 @@ class App extends Controller
             'subheading'     => $field['subheading'] ?? null,
         ];
     }
+
+    public function headerheroOptions()
+    {
+        $field = get_field('header_hero', 'options');
+        return (object) [
+            'background'     => $field['background_image'] ?? null,
+            'heading'        => $field['heading'] ?? null,
+            'subheading'     => $field['subheading'] ?? null,
+        ];
+    }
 }

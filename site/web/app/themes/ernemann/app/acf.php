@@ -34,6 +34,11 @@ if( function_exists('acf_add_options_page') )
 		'parent_slug'	=> 'theme-general-settings',
 	));
 	
+	acf_add_options_sub_page(array(
+		'page_title'     => 'Properties Settings',
+		'menu_title'    => 'Properties Settings',
+		'parent_slug'    => 'edit.php?post_type=properties',
+	));
 }
 
 /**
@@ -73,20 +78,7 @@ add_filter( 'acf/update_value/name=testimonial_author', 'testimonials_title', 10
 /**
  * Press
  */
-add_action('admin_head', 'hide_press_title_input');
-function hide_press_title_input() {
-  $screen = get_current_screen();
-  if ($screen->id != 'press') {
-    return;
-  }
-  ?>
-    <style type="text/css">
-      #post-body-content #titlediv #titlewrap {
-        display: none;
-      }
-    </style>
-  <?php 
-}
+
 function press_title( $value, $post_id, $field ) {
 	if ( get_post_type( $post_id ) == 'press' ) {
 
@@ -107,20 +99,7 @@ add_filter( 'acf/update_value/name=press_heading', 'press_title', 10, 3 );
 /**
  * Properties
  */
-add_action('admin_head', 'hide_property_title_input');
-function hide_property_title_input() {
-  $screen = get_current_screen();
-  if ($screen->id != 'properties') {
-    return;
-  }
-  ?>
-    <style type="text/css">
-      #post-body-content #titlediv #titlewrap {
-        display: none;
-      }
-    </style>
-  <?php 
-}
+
 function property_title( $value, $post_id, $field ) {
 	if ( get_post_type( $post_id ) == 'properties' ) {
 

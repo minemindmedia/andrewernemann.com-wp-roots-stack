@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use Sober\Controller\Controller;
 
-class SingleProperties extends Controller
+class PostTypeArchiveProperties extends Controller
 {
 
     public function gallery() {

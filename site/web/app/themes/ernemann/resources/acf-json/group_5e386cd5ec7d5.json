@@ -282,24 +282,6 @@
                     "maxlength": "",
                     "rows": 12,
                     "new_lines": ""
-                },
-                {
-                    "key": "field_5e3881a72da2a",
-                    "label": "Google Map",
-                    "name": "google_map",
-                    "type": "google_map",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "center_lat": "39.1911",
-                    "center_lng": "-106.8175",
-                    "zoom": "",
-                    "height": ""
                 }
             ]
         },
@@ -1119,6 +1101,24 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5e3c6f3b3bad9",
+                    "label": "Google Map",
+                    "name": "google_map",
+                    "type": "google_map",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "center_lat": "39.1911",
+                    "center_lng": "-106.8175",
+                    "zoom": "",
+                    "height": ""
                 }
             ]
         }
@@ -1143,5 +1143,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1580957397
+    "modified": 1581019213
 }

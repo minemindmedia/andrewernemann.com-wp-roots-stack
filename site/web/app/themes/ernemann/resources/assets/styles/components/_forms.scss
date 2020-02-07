@@ -7,12 +7,21 @@
   input[type="email"],
   input[type="tel"] {
     padding: 0 2rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0;
     background-color: transparent;
-    font-size: 22px;
+    font-size: 18px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0.75rem;
+      font-size: 22px;
+    }
 
     &::placeholder {
-      font-size: 22px;
+      font-size: 18px;
+
+      @media (min-width: 1024px) {
+        font-size: 22px;
+      }
     }
   }
 
@@ -31,12 +40,20 @@
   .firstname-container,
   .email-container,
   .preferred-date {
-    padding-right: 1.5rem;
+    padding: 0;
+
+    @media (min-width: 1024px) {
+      padding-right: 1.5rem;
+    }
   }
 
   .lastname-container,
   .phone-container,
   .preferred-time {
-    padding-left: 1.5rem;
+    padding: 0;
+
+    @media (min-width: 1024px) {
+      padding-left: 1.5rem;
+    }
   }
 }
