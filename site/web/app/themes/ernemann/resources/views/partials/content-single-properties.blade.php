@@ -1,3 +1,4 @@
+@include('partials.buy-now-modal')
 <article @php post_class() @endphp>
   <header class="p-8 md:p-16 text-center text-grey">
     <div class="w-full lg:mb-0 px-4 lg:px-8 py-8 lg:py-32  border border-solid">
@@ -141,7 +142,12 @@
   <div class="lg:flex p-8 md:p-16 text-center text-grey bg-grey-lightest">
     <div class="w-full px-4 md:px-8 py-8 lg:py-32 border border-solid border-white">
       <div class="w-4/5 mx-auto">
-        <a href="" class="inline-block text-lg sm:text-4xl font-normal no-underline text-red px-16 py-8 border border-solid border-red capitalize mb-12">{{ $buy_now->heading }}</a>
+ 
+        
+
+
+
+        <a href="" class="buy-open inline-block text-lg sm:text-4xl font-normal no-underline text-red px-16 py-8 border border-solid border-red capitalize mb-12">{{ $buy_now->heading }}</a>
         <p class="text-center text-xl lg:text-2xl capitalize leading-normal">{!! $buy_now->content !!}</p> 
       </div>
     </div>

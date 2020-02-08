@@ -4,9 +4,9 @@
       @php $image_1 = $images[0] @endphp
       <a href="<?php the_permalink(); ?>" class="relative">
         <div class="thumbnail-footer absolute w-full h-16 text-white bg-grey opacity-85">
-          <p class="text-center text-2xl text-white uppercase mt-4 ">
+          <p class="text-center text-sm lg:text-2xl text-white uppercase mt-6 lg:mt-4 ">
             <span>{{ $property_details->city }}</span>
-            <span class="ml-4 pl-5">{{ $property_price->price }}</span>
+            <span class="ml-4 pl-5">${{ $property_price->price }}</span>
             <span class="ml-4 pl-5 last">{{ $property_details->bedrooms }} Bedrooms</span>
           <img src="@asset('images/gallery-next.svg')" alt="Next Arrow">
           </p>

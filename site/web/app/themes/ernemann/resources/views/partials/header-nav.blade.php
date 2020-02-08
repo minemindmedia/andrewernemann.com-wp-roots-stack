@@ -8,9 +8,9 @@
       @endif
     </div>
     <div class="w-1/3 pt-2">
-      <button class="modal-open block ml-auto mr-auto outline-none">
+      <a href="#main-menu" class="block ml-auto mr-auto outline-none">
         <img src="{{ $header->hamburger }}" class="block w-6 md:w-8 m-auto mt-3 outline-none">
-      </button>
+      </a>
     </div>
     <div class="w-1/3 px-4 py-2 m-2">
       <div class="contact md:mr-8 md:mt-2">
