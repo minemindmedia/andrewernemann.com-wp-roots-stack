@@ -46,7 +46,7 @@ View the full documentation at https://tailwindcss.com.
 let colors = {
   'ae-green-bg': 'rgba(65, 95, 102, .65)',
   
-  'primary': '#525ddc',
+  'primary': '#231F20',
 
   'transparent': 'transparent',
 
