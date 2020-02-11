@@ -65,26 +65,32 @@
                     </div>
                     @endif
                     <div class="w-full @if ( $thumb ) lg:w-1/2 @endif">
-                        <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $heading }}</h2>
-                        <p class="text-md md:text-2xl mb-8">{{ $subheading }}</p> 
-                        <p class="text-md md:text-2xl mb-8">{{ $content }}</p> 
-                        <a href="{{ $btnurl }}">
-                        <button class="bg-white py-3 px-8 border border-grey-light hover:border-transparent uppercase text-lg">{{ $btntxt }}</button>
+                        @if ( $heading )<h2 class="uppercase text-xl md:text-3xl mb-6">{{ $heading }}</h2>@endif
+                        @if ( $subheading )<p class="text-md md:text-2xl mb-8">{{ $subheading }}</p>@endif
+                        @if ( $content )<p class="text-md md:text-2xl mb-8">{{ $content }}</p>@endif
+                        @if ( $btntxt )
+                            <a href="{{ $btnurl }}">
+                            <button class="bg-white py-3 px-8 border border-grey-light hover:border-transparent uppercase text-lg">{{ $btntxt }}</button>
+                            </a>
+                        @endif
+                    </div>
+                    </div>
+                    <div class="lg:flex w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-16 border border-solid">
+                    @if ( $thumb_2 )
+                    <div class="w-full @if ( $thumb_2 ) lg:w-1/2 @endif">
+                        <img src="{{ $thumb_2 ['url'] }}" alt="{{ $thumb_2 ['alt'] }}" class="px-8 pb-8 lg:pb-0">
+                    </div>
+                    @endif
+                    <div class="w-full lg:w-1/2">
+                        @if ( $heading_2 )<h2 class="uppercase text-xl md:text-3xl mb-6">{{ $heading_2 }}</h2>@endif
+                        @if ( $subheading_2 )<p class="text-md md:text-2xl mb-8">{{ $subheading_2 }}</p>@endif
+                        @if ( $content_2 )<p class="text-md md:text-2xl mb-8">{{ $content_2 }}</p>@endif
+                        @if ( $btntxt_2 )
+                        <a href="{{ $btnurl_2 }}">
+                        <button class="bg-white py-3 px-8 border border-grey-light hover:border-transparent uppercase text-lg">{{ $btntxt_2 }}</button>
                         </a>
+                        @endif
                     </div>
-                    </div>
-                <div class="lg:flex w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-16 border border-solid">
-                <div class="w-full lg:w-1/2">
-                    <img src="{{ $thumb_2 ['url'] }}" alt="{{ $thumb_2 ['alt'] }}" class="px-8 pb-8 lg:pb-0">
-                </div>
-                <div class="w-full lg:w-1/2">
-                    <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $heading_2 }}</h2>
-                    <p class="text-md md:text-2xl mb-8">{{ $subheading_2 }}</p> 
-                    <p class="text-md md:text-2xl mb-8">{{ $content_2 }}</p> 
-                    <a href="{{ $btnurl }}">
-                    <button class="bg-white py-3 px-8 border border-grey-light hover:border-transparent uppercase text-lg">{{ $btntxt }}</button>
-                    </a>
-                </div>
                 </div>
             </div>
 
