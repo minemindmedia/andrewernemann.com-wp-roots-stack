@@ -63,4 +63,42 @@ class App extends Controller
         ];
     }
 
+    public function workWithUs()
+    {
+        $field = get_field('work_with_us', 'options');
+        return (object) [
+            'heading'     => $field['heading'] ?? null,
+            'subheading'        => $field['subheading'] ?? null,
+            'content'     => $field['content'] ?? null,
+        ];
+    }
+
+    public function footerLogos()
+    {
+        $field = get_field('footer_logos', 'options');
+        return (object) [
+            'l1'     => $field['logo_one'] ?? null,
+            'l2'        => $field['logo_two'] ?? null,
+        ];
+    }
+
+    public function contactDetails()
+    {
+        $field = get_field('contact_details', 'options');
+        return (object) [
+            'phone'     => $field['phone_number'] ?? null,
+            'email'        => $field['email_address'] ?? null,
+            'address'        => $field['business_address'] ?? null,
+            'copyright'        => $field['copyright'] ?? null,
+        ];
+    }
+
+    public function finePrint()
+    {
+        $field = get_field('fine_print', 'options');
+        return (object) [
+            'content'     => $field['content'] ?? null,
+        ];
+    }
+
 }

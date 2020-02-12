@@ -31,7 +31,7 @@
     </div>
 </div>
 <div class="lg:m-16 mt-0" id="tabs">
-    <nav class="lg:flex text-center border border-tertiary">
+    <nav class="lg:flex text-center sm:border sm:border-tertiary">
         <a href="#tab-1" class="block w-full lg:w-1/3 py-4 lg:py-12 no-underline uppercase text-secondary lg:text-3xl font-bold ">
             {{ $tabs->one_title }}
         <div class="icon"></div>

@@ -1355,11 +1355,6 @@ bytes@3.1.0:
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
 
-c2-event-handler@^2.5.2:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/c2-event-handler/-/c2-event-handler-2.5.2.tgz#266a7b26a4cf1eef090e17b5b2d90db7c69b0e5d"
-  integrity sha1-Jmp7JqTPHu8JDhe1stkNt8abDl0=
-
 cacache@^10.0.4:
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/cacache/-/cacache-10.0.4.tgz#6452367999eff9d4188aefd9a14e9d7c6a263460"
@@ -9729,6 +9724,16 @@ symbol-observable@1.0.1:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
+tabbyjs@^12.0.3:
+  version "12.0.3"
+  resolved "https://registry.yarnpkg.com/tabbyjs/-/tabbyjs-12.0.3.tgz#df2dea175cd345d782178ad542f048f36e544ec0"
+  integrity sha512-PrXMS5s+qOAEZiLef8H+4PT2nnrKKE1FOwlkI7LzVn0Ui9Nk1+Yidr1bQEO6UF+JtsztPfVbeA2aFgd0pwpEhg==
+
+tabit@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tabit/-/tabit-2.2.2.tgz#c00d74c3fd2bca93d2aa8f57a165578319d584db"
+  integrity sha1-wA10w/0rypPSqo9XoWVXgxnVhNs=
+
 table@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/table/-/table-4.0.2.tgz#a33447375391e766ad34d3486e6e2aedc84d2e36"
@@ -9752,11 +9757,6 @@ table@^4.0.1:
     lodash "^4.17.4"
     slice-ansi "1.0.0"
     string-width "^2.1.1"
-
-tabs@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/tabs/-/tabs-0.2.0.tgz#470f6f2fa5466064eb1a9501d74c16a883cfbfda"
-  integrity sha1-Rw9vL6VGYGTrGpUB10wWqIPPv9o=
 
 tailwindcss@^0.6.5:
   version "0.6.6"
@@ -10434,13 +10434,6 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
-
-vanilla-js-tabs@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vanilla-js-tabs/-/vanilla-js-tabs-1.0.3.tgz#9d0c8073bbf236542fc6d50defe6163808001adc"
-  integrity sha512-D8bURo5NBnAjI+3wIftH6yfHExEWifkTQ8zhsa3AR/GlZLJloZ0NMi1AaACPKYDZfncOUrDZLNZqrdwkzxKn2g==
-  dependencies:
-    c2-event-handler "^2.5.2"
 
 vendors@^1.0.0:
   version "1.0.4"
