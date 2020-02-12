@@ -1,3 +1,4 @@
+import videojs from 'video.js';
 export default {
   init() {
     // JavaScript to be fired on the home page
@@ -44,6 +45,15 @@ export default {
       speed: 500,
       adaptiveHeight: true,
       arrows: false,
+    });
+
+    var video = videojs('home-player');
+    video.on('pause', function() {
+      this.bigPlayButton.show();
+      
+      video.one('play', function() {
+        this.bigPlayButton.hide();
+      });
     });
   },
   finalize() {

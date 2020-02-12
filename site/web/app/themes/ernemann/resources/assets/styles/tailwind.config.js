@@ -47,6 +47,8 @@ let colors = {
   'ae-green-bg': 'rgba(65, 95, 102, .65)',
   
   'primary': '#231F20',
+  'secondary': '#ed4e2e',
+  'tertiary': '#f5f4ef',
 
   'transparent': 'transparent',
 
