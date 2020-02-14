@@ -1,4 +1,3 @@
-@include('partials.menu-modal')
 @if (is_singular('properties'))
 @include('partials.header-single-properties')
 @else

@@ -12,6 +12,7 @@ import home from './routes/home';
 import aboutUs from './routes/about';
 import singleProperties from './routes/singleProperties';
 import ourApproach from './routes/ourApproach';
+import meetTheTeam from './routes/meetTheTeam';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -25,6 +26,8 @@ const routes = new Router({
   singleProperties,
   // Page Our Approach
   ourApproach,
+  // Meet The Team
+  meetTheTeam,
 });
 
 // Load Events

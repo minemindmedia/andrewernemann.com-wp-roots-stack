@@ -52,3 +52,21 @@ body.modal-active {
   }
 }
 
+.siteModal {
+  background-color: rgba(#000, 0.9);
+
+  .siteModalClose {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+  }
+
+  ul {
+    li {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+

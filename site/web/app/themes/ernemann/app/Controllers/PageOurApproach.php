@@ -63,16 +63,4 @@ class PageOurApproach extends Controller
         ];
     }
 
-    public function reach()
-    {
-        $field = get_field('reach');
-        return (object) [
-            'heading'     => $field['heading'] ?? null,
-            'content'     => $field['content'] ?? null,
-            'logo'     => $field['logo'] ?? null,
-            'btntxt'     => $field['button_text'] ?? null,
-            'btnurl'     => $field['button_url'] ?? null,
-        ];
-    }
-
 }
