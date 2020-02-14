@@ -1,3 +1,5 @@
+/* schedule */
+
 #nf-form-2-cont {
   .nf-before-form-content {
     display: none;
@@ -30,7 +32,7 @@
   }
 
   input[type="button"] {
-    border: 1px solid grey;
+    border: 1px solid #f5f4ef;
     background-color: transparent;
     color: black;
     text-transform: uppercase;
@@ -57,3 +59,105 @@
     }
   }
 }
+
+/* buy now */
+
+#nf-form-3-cont {
+  .nf-before-form-content {
+    display: none;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 0 2rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    font-size: 18px;
+    height: 45px;
+    border: 1px solid #f5f4ef;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0.75rem;
+      font-size: 22px;
+    }
+
+    &::placeholder {
+      font-size: 18px;
+
+      @media (min-width: 1024px) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  input[aria-invalid="false"] {
+    border-color: #f5f4ef !important;
+  }
+
+  .nf-pass.field-wrap .nf-field-element::after {
+    color: #f5f4ef;
+  }
+
+  input[aria-invalid="true"] {
+    border-color: #ed4e2e !important;
+  }
+
+  .nf-error.field-wrap .nf-field-element::after {
+    height: 43px;
+    background: #ed4e2e;
+  }
+
+  .nf-error-msg {
+    padding: 5px;
+    background-color: #ed4e2e;
+    margin: 0 0 2rem 0;
+    color: white;
+  }
+
+  textarea {
+    line-height: 35px;
+  }
+
+  .nf-field-container {
+    margin-bottom: 10px;
+  }
+
+  .nf-field-label {
+    margin-left: 25px;
+
+    label {
+      font-size: 14px;
+      font-weight: normal;
+
+      span {
+        color: #ed4e2e;
+      }
+    }
+  }
+
+  .submit-container {
+    margin-bottom: 0;
+  }
+
+  input[type="button"] {
+    border: 1px solid #f5f4ef;
+    background-color: transparent;
+    color: #f5f4ef;
+    text-transform: uppercase;
+    padding: 0 1.5rem;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .nf-response-msg {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .nf-error-field-errors {
+    margin-top: 2rem;
+  }
+}
+

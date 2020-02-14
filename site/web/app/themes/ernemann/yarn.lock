@@ -5453,6 +5453,11 @@ jpegtran-bin@^4.0.0:
     bin-wrapper "^4.0.0"
     logalot "^2.0.0"
 
+jquery-popup-overlay@^2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/jquery-popup-overlay/-/jquery-popup-overlay-2.1.4.tgz#d295d2051f318b7fcabe8cd28e593c56dec015d7"
+  integrity sha512-4AGjLFfyBeQJYFmZdr3Br1ntPUYbB2EF767quGsjbxouDjApwzI4GcVM3yMAFkm5oIUNzwxaLUVrq29JbsR8zw==
+
 jquery@^3.3.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
@@ -8687,6 +8692,11 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^3.0.0"
     inherits "^2.0.1"
+
+rmodal@^1.0.36:
+  version "1.0.36"
+  resolved "https://registry.yarnpkg.com/rmodal/-/rmodal-1.0.36.tgz#bb65519e2f681df08d9fc3e9631e016176a936f6"
+  integrity sha512-aiLN88lxnJNi0DRsr0B8kqr58qAuvtKwDLmY27kmZC2oIFFwJ9+0A+1jxKOkwwJU/n8oKeLxrDlgsOV35tyCMg==
 
 run-async@^2.2.0:
   version "2.3.0"

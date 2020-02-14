@@ -142,16 +142,20 @@
   <div class="lg:flex p-8 md:p-16 text-center text-grey bg-grey-lightest">
     <div class="w-full px-4 md:px-8 py-8 lg:py-32 border border-solid border-white">
       <div class="w-4/5 mx-auto">
- 
-        
-
-
-
-        <a href="" class="buy-open inline-block text-lg sm:text-4xl font-normal no-underline text-red px-16 py-8 border border-solid border-red capitalize mb-12">{{ $buy_now->heading }}</a>
+        <a href="" class="buyModal_open buy-open inline-block text-lg sm:text-4xl font-normal no-underline text-red px-16 py-8 border border-solid border-red capitalize mb-12">{{ $buy_now->heading }}</a>
         <p class="text-center text-xl lg:text-2xl capitalize leading-normal">{!! $buy_now->content !!}</p> 
       </div>
     </div>
   </div>
+  <div id="buyModal" class="siteModal buyModal h-full w-full text-white overflow-y-scroll">
+        <a href="#" class="buyModal_close siteModalClose"><img src="{{ $header->close }}" class="block w-16 cursor-pointer"></a>
+        <div class="w-2/5 mx-auto mt-48 mb-16 ">
+          <div class="px-24 py-16 border border-tertiary uppercase font-normal">
+            <p class="text-center text-2xl font-bold mb-8">Buy it now!</p>
+            {!! do_shortcode('[ninja_form id=3]') !!}
+          </div>
+        </div>
+    </div>
   <div class="p-8 md:p-16 text-grey bg-white">
     <div class="xl:flex w-full px-4 md:px-16 py-8 lg:py-16 border border-solid">
       <div class="xl:w-1/2 text-center">
