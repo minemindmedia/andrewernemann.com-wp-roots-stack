@@ -5,7 +5,7 @@ export default {
     // JavaScript to be fired on the about us page
     $('.single-gallery').slick({
       arrows: true,
-      dots: true,
+      dots: false,
       useCSS: false,
     });
     $('.single-gallery_two').slick({

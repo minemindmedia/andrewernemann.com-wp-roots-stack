@@ -1,9 +1,10 @@
-<nav class="flex md:pt-10">
-    <div class="w-1/3 px-4 py-2 m-2 md:pl-20">
+<nav class="absolute w-full z-50 md:pt-10">
+  <div class="flex">
+    <div class="w-1/3 px-4 py-1 m-2 md:pl-20">
       @if(is_front_page())
       @else
       <a href="/">
-        <img src="{{ $header->logo }}" class="block w-32 mr-auto">
+        <img src="{{ $header->logo }}" class="block w-24 md:w-32 mr-auto">
       </a>
       @endif
     </div>
@@ -18,6 +19,7 @@
         <i class="inline-block mr-4 md:mr-10 float-right"><img src="{{ $header->phone }}" class="block w-6 md:w-8 mr-auto"></i>
       </div>
     </div>
+  </div>
 </nav>
 
 
@@ -36,5 +38,5 @@
             @endif
         </div>  
     </div>
-</div>
+  </div>
 </div>
