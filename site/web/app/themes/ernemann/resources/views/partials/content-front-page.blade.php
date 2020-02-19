@@ -53,12 +53,22 @@
     <div class="w-full lg:w-1/2">
       <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectiontwo->headingTwo }}</h2>
       <p class="text-md md:text-2xl mb-8">{!! $towupsectiontwo->subheadingTwo !!}</p> 
-      <a href="{{ $towupsectiontwo->buttonURLTwo }}">
-        <button class="bg-white py-3 px-8 border border-grey-light hover:border-transparent uppercase text-lg">{{ $towupsectiontwo->buttonTextTwo }}</button>
-      </a>
+      <button class="mrModal_open bg-white py-3 px-8 border border-grey-light hover:border-transparent uppercase text-lg cursor-pointer">{{ $towupsectiontwo->buttonTextTwo }}</button>
     </div>
   </div>
 </div>
+
+<div id="mrModal" class="siteModal mrModal h-full w-full text-white overflow-y-scroll">
+  <a href="#" class="mrModal_close siteModalClose"><img src="{{ $header->close }}" class="block w-16 cursor-pointer"></a>
+  <div class="w-2/5 mx-auto mt-48 mb-16 ">
+    <div class="px-24 py-16 border border-tertiary uppercase font-normal">
+      <p class="text-center text-2xl font-bold mb-12">Sign up to receive the market report</p>
+      {!! do_shortcode('[ninja_form id=4]') !!}
+    </div>
+  </div>
+</div>
+
+
 <div class="relative w-full home-property-video">
   <div class="details absolute z-50 text-center mb-16 mr-32 hidden lg:block"> 
     <h3 class="text-3xl text-white uppercase mb-6">109 Willoughby Way</h3> 

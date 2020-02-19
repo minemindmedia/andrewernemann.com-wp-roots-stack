@@ -1,7 +1,12 @@
+import jQueryPopupOverlay from 'jquery-popup-overlay';
 import videojs from 'video.js';
 export default {
   init() {
     // JavaScript to be fired on the home page
+    $('.mrModal').popup({
+      transition: '0.2s',
+      scrolllock: true,
+    });
     $('.testimonial-slider').slick({
       dots: true,
       speed: 500,
@@ -55,6 +60,7 @@ export default {
         this.bigPlayButton.hide();
       });
     });
+    return jQueryPopupOverlay;
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS

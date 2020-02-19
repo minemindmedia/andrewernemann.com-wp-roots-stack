@@ -24,6 +24,13 @@ body.modal-active {
   margin-top: 32rem;
 }
 
+/* Outlines */
+
+a,
+button {
+  outline: none;
+}
+
 /* Carousel Bullets */
 
 .slick-dots {
@@ -59,6 +66,10 @@ body.modal-active {
     position: fixed;
     right: 2rem;
     top: 2rem;
+  }
+
+  a {
+    color: white;
   }
 
   ul {
