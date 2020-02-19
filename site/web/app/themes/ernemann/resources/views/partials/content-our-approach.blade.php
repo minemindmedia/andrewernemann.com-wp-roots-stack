@@ -23,7 +23,7 @@
         </video>
     </div>
 </div>
-<div class="flex">
+<div class="flex" id="statement">
     <div class="w-full lg:w-2/3 lg:mx-auto my-8 lg:my-48">
         <div class="lg:border-r lg:border-l border-secondary text-center px-8 lg:px-32 text-secondary lg:text-3xl leading-normal font-normal">
             <p>{!! $statement->content !!}</p>

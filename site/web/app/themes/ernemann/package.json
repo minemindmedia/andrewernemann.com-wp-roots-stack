@@ -88,6 +88,7 @@
     "glide": "^0.2.0",
     "jquery": "^3.3.1",
     "jquery-popup-overlay": "^2.1.4",
+    "lozad": "^1.14.0",
     "rmodal": "^1.0.36",
     "siema": "^1.5.1",
     "slick-carousel": "^1.8.1",

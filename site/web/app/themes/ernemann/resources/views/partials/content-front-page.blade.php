@@ -33,7 +33,7 @@
     <div class="m-8 md:m-16 p-8 md:p-16 border border-white text-center">
       <h2 class="uppercase text-white text-3xl mb-6">{{ $oneupsection->heading }}</h2>
       <p class="text-md md:text-2xl mb-8 text-white">{{ $oneupsection->content }}</p>
-      <div class="py-2 px-4"><img src="{!! $oneupsection->logo !!}" alt="" class="h-16"></div>
+      <div class="py-2 px-4"><img data-src="{{ $oneupsection->logo['url'] }}" alt="{{ $oneupsection->logo['alt'] }}" class="lozad h-16"></div>
     </div>
   </div>
   </div>
@@ -42,13 +42,13 @@
   <div class="w-full md:mr-8 mb-8 lg:mb-0 px-4 lg:px-8 py-8 lg:py-16  border border-solid">
     <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectiontwo->headingOne }}</h2>
     <p class="text-md md:text-2xl mb-8">{!! $towupsectiontwo->subheadingOne !!}</p>
-    <a href="{{ $towupsectiontwo->buttonURLOne }}">
+    <a href="{{ $towupsectiontwo->pdfFile }}" target="_blank">
       <button class="bg-white py-3 px-8 border border-grey-light hover:border-transparent uppercase text-lg">{{ $towupsectiontwo->buttonTextOne }}</button>
     </a>
   </div>
   <div class="lg:flex w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-16 border border-solid">
     <div class="w-full lg:w-1/2">
-      <img src="{{ $towupsectiontwo->report['url'] }}" alt="{{ $towupsectiontwo->report['alt'] }}" class="px-8 pb-8 lg:pb-0">
+      <img data-src="{{ $towupsectiontwo->report['url'] }}" alt="{{ $towupsectiontwo->report['alt'] }}" class="lozad px-8 pb-8 lg:pb-0">
     </div>
     <div class="w-full lg:w-1/2">
       <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectiontwo->headingTwo }}</h2>
@@ -59,7 +59,7 @@
 </div>
 
 <div id="mrModal" class="siteModal mrModal h-full w-full text-white overflow-y-scroll">
-  <a href="#" class="mrModal_close siteModalClose"><img src="{{ $header->close }}" class="block w-16 cursor-pointer"></a>
+  <a href="#" class="mrModal_close siteModalClose"><img data-src="{{ $header->close }}" alt="Close" class="lozad block w-16 cursor-pointer"></a>
   <div class="w-2/5 mx-auto mt-48 mb-16 ">
     <div class="px-24 py-16 border border-tertiary uppercase font-normal">
       <p class="text-center text-2xl font-bold mb-12">Sign up to receive the market report</p>
@@ -71,22 +71,28 @@
 
 <div class="relative w-full home-property-video">
   <div class="details absolute z-50 text-center mb-16 mr-32 hidden lg:block"> 
-    <h3 class="text-3xl text-white uppercase mb-6">109 Willoughby Way</h3> 
-    <h4 class="text-2xl text-white uppercase font-normal">Red Mountain<span class="w-0 border-l-2 border-white ml-4 mr-4"></span>Aspen</h4>
-    <h4 class="text-2xl text-white uppercase font-normal mb-8">$24,750,000</h4>
-    <button class="py-3 px-8 border border-white bg-transparent uppercase text-lg text-white">Learn more</button> 
+    <h3 class="text-3xl text-white uppercase mb-6">{{ $video_image->street }}</h3> 
+    <h4 class="text-2xl text-white uppercase font-normal">{{ $video_image->neighborhood }}<span class="w-0 border-l-2 border-white ml-4 mr-4"></span>{{ $video_image->city }}</h4>
+    <h4 class="text-2xl text-white uppercase font-normal mb-8">${{ $video_image->price }}</h4>
+    <a href="{{ $video_image->btnurl }}">
+    <button class="py-3 px-8 border border-white bg-transparent uppercase text-lg text-white">{{ $video_image->btntxt }}</button> 
+  </a>
   </div>
+  @if ( $video_image->videoImage == 'video' )
   <video id="video-player"
     class="video-js vjs-default-skin vjs-big-play-centered" 
     controls
     preload="auto"
     width="640"
     height="264"
-    poster="{{ $videosection->poster }}"
+    poster="{{ $video_image->poster }}"
     data-setup='{"fluid": true}'>
-    <source src="{{ $videosection->mp4 }}" type='video/mp4' />
-    <source src="{{ $videosection->webm }}" type='video/webm' />
+    <source src="{{ $video_image->mp4 }}" type='video/mp4' />
+    <source src="{{ $video_image->webm }}" type='video/webm' />
   </video>
+  @elseif ( $video_image->videoImage == 'image' )
+  <img class="object-cover w-full" src="{!! $video_image->image['url'] !!}" alt="{!! $video_image->image['alt'] !!}">
+  @endif
 </div>
 <div class="flex">
   <div class="w-4/5 lg:w-1/2 mx-auto my-8 lg:my-48 text-center border-r border-l border-red"> 

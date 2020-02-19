@@ -46,12 +46,29 @@ class FrontPage extends Controller
             'headingOne'     => $field['heading_one'] ?? null,
             'subheadingOne'        => $field['subheading_one'] ?? null,
             'buttonTextOne'     => $field['button_text_one'] ?? null,
-            'buttonURLOne'     => $field['button_url_one'] ?? null,
+            'pdfFile'     => $field['pdf_file'] ?? null,
             'headingTwo'     => $field['heading_two'] ?? null,
             'subheadingTwo'        => $field['subheading_two'] ?? null,
             'buttonTextTwo'     => $field['button_text_two'] ?? null,
             'buttonURLTwo'     => $field['button_url_two'] ?? null,
             'report'     => $field['report_cover'] ?? null,
+        ];
+    }
+    public function videoImage()
+    {
+        $field = get_field('video_image');
+        return (object) [
+            'videoImage'     => $field['video_image'] ?? null,
+            'mp4'     => $field['mp4_video'] ?? null,
+            'webm'        => $field['webm_video'] ?? null,
+            'poster'        => $field['video_poster'] ?? null,
+            'image'        => $field['image'] ?? null,
+            'street'        => $field['property_street'] ?? null,
+            'neighborhood'        => $field['property_neighborhood'] ?? null,
+            'city'        => $field['property_city'] ?? null,
+            'price'        => $field['property_price'] ?? null,
+            'btntxt'        => $field['button_text'] ?? null,
+            'btnurl'        => $field['button_url'] ?? null,
         ];
     }
     public function testimonials()
