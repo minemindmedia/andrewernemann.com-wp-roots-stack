@@ -23,7 +23,8 @@ class PageMeetTheTeam extends Controller
         return (object) [
             'title'     => $field['title'] ?? null,
             'statement'     => $field['statement'] ?? null,
-            'biography'     => $field['biography'] ?? null,
+            'biography_one'     => $field['biography_one'] ?? null,
+            'biography_two'     => $field['biography_two'] ?? null,
             'photo'     => $field['photo'] ?? null,
         ];
     }
@@ -34,7 +35,8 @@ class PageMeetTheTeam extends Controller
         return (object) [
             'title'     => $field['title'] ?? null, 
             'statement'     => $field['statement'] ?? null,
-            'biography'     => $field['biography'] ?? null,
+            'biography_one'     => $field['biography_one'] ?? null,
+            'biography_two'     => $field['biography_two'] ?? null,
             'photo'     => $field['photo'] ?? null,
         ];
     }

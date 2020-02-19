@@ -15,11 +15,20 @@
     </div>
     <div class="w-full lg:w-1/2 xl:w-1/5 h-128 lg:h-auto " style="background: url('{{ $meet_andrew->photo['url'] }}'); background-size: cover; background-position: center center;"></div>
     <div id="andrewModal" class="siteModal teamModal h-full w-full text-white overflow-y-scroll">
-        <a href="#" class="andrewModal_close siteModalClose"><img src="{{ $header->close }}" class="block w-16 cursor-pointer"></a>
-        <div class="w-1/2 mx-auto mt-16 mb-16 ">
-            <img src="{{ $meet_andrew->photo['url'] }}" alt="{{ $meet_andrew->photo['alt'] }}" class="w-64 float-left mr-8 mb-8">
-            <h2 class="uppercase text-2xl mb-8">{{ $meet_andrew->title }}</h2>
-            <div class="text-lg ">{!! $meet_andrew->biography !!}</div>
+        <a href="#" class="andrewModal_close siteModalClose"><img src="@asset('images/close-dark.svg')" class="block w-16 cursor-pointer"></a>
+        <div class="lg:w-3/4 mx-8 lg:mx-auto mt-24 lg:mt-16 mb-16 ">
+            <div class="lg:flex text-2xl leading-normal text-primary">
+                <div class="flex-1 px-6 pt-12">
+                    <img src="{{ $meet_andrew->photo['url'] }}" alt="{{ $meet_andrew->photo['alt'] }}" class="md:w-64 float-left mr-8 mb-8">
+                    <h2 class="uppercase text-2xl mb-8">{{ $meet_andrew->title }}</h2>
+                    {!! $meet_andrew->biography_one !!}
+                </div>
+                @if ( $meet_andrew->biography_two )
+                <div class="flex-1 px-6 pt-12">
+                    {!! $meet_andrew->biography_two !!}
+                </div>
+                @endif
+            </div>
         </div>
     </div>
 </div>
@@ -31,7 +40,8 @@
         @php the_row();
         $title = get_sub_field('title');
         $statement = get_sub_field('statement');
-        $biography = get_sub_field('biography');
+        $biography_one = get_sub_field('biography_one');
+        $biography_two = get_sub_field('biography_two');
         $photo = get_sub_field('photo');
         @endphp
         <div class=" lg:w-1/2  px-8 mb-8 lg:mb-16">
@@ -41,12 +51,22 @@
             <a href="" class="teamModal-{{ $k }}_open py-3 px-8 border border-quaternary uppercase text-lg text-primary outline-none no-underline">Read more</a>
             </div>
         </div>
-        <div id="teamModal-{{ $k }}" class="siteModal teamModal h-full w-full text-white overflow-y-scroll">
-            <a href="#" class="teamModal-{{ $k }}_close siteModalClose"><img src="{{ $header->close }}" class="block w-8 xl:w-16 cursor-pointer"></a>
-            <div class="lg:w-1/2 mx-8 lg:mx-auto mt-24 lg:mt-16 mb-16 ">
-                <img src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="md:w-64 float-left mr-8 mb-8">
-                <h2 class="uppercase text-2xl mb-8">{{ $title }}</h2>
-                <div class="text-lg ">{!! $biography !!}</div>
+        <div id="teamModal-{{ $k }}" class="teamModal h-full w-full text-primary overflow-y-scroll">
+            <a href="#" class="teamModal-{{ $k }}_close teamModalClose"><img src="@asset('images/close-dark.svg')" class="block w-8 xl:w-16 cursor-pointer"></a>
+            <div class="lg:w-3/4 mx-4 lg:mx-auto mt-24 lg:mt-16 mb-16 ">
+                <div class="lg:flex md:text-2xl leading-normal">
+                    <div class="flex-1 px-6 pt-6 lg:pt-12 pb-0">
+                        <img src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="md:w-64 float-left mr-8 mb-8">
+                        <h2 class="uppercase text-2xl mb-8">{{ $title }}</h2>
+                        {!! $biography_one !!}
+                    </div>
+                    @if ( $biography_two )
+                    <div class="flex-1 px-6 pt-6 lg:pt-12 pb-0">
+                        {!! $biography_two !!}
+                    </div>
+                    @endif
+                </div>
+                <a href="#" class="teamModal-{{ $k }}_close text-secondary float-right m-8 uppercase no-underline">Close</a>
             </div>
         </div>
         @endwhile
