@@ -3,9 +3,13 @@ export default {
   init() {
     // JavaScript to be fired on all pages
     $('#navModal').popup({
-        transition: '0.5s',
+        transition: '0.2s',
         scrolllock: true,
     });
+    $('#contactModal').popup({
+      transition: '0.2s',
+      scrolllock: true,
+  });
     return jQueryPopupOverlay;
   },
   finalize() {
