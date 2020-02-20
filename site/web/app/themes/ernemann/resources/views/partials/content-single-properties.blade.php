@@ -91,7 +91,7 @@
     @else 
     <div class="single-gallery_two">
         @foreach( $video_slideshow->slideshow as $image )
-        <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" />
+        <img data-src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="lozad" />
         @endforeach
     </div>
     @endif
@@ -148,7 +148,7 @@
     </div>
   </div>
   <div id="buyModal" class="siteModal buyModal h-full w-full text-white overflow-y-scroll">
-        <a href="#" class="buyModal_close siteModalClose"><img src="{{ $header->close }}" class="block w-16 cursor-pointer"></a>
+        <a href="#" class="buyModal_close siteModalClose"><img data-src="{{ $header->close }}" class="lozad block w-16 cursor-pointer"></a>
         <div class="w-2/5 mx-auto mt-48 mb-16 ">
           <div class="px-24 py-16 border border-tertiary uppercase font-normal">
             <p class="text-center text-2xl font-bold mb-12">Buy it now!</p>

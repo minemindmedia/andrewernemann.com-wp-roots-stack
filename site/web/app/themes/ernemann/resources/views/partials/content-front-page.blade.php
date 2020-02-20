@@ -91,7 +91,7 @@
     <source src="{{ $video_image->webm }}" type='video/webm' />
   </video>
   @elseif ( $video_image->videoImage == 'image' )
-  <img class="object-cover w-full" src="{!! $video_image->image['url'] !!}" alt="{!! $video_image->image['alt'] !!}">
+  <img class="lozad object-cover w-full" data-src="{!! $video_image->image['url'] !!}" alt="{!! $video_image->image['alt'] !!}">
   @endif
 </div>
 <div class="flex">

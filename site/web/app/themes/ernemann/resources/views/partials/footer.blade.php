@@ -8,8 +8,8 @@
   <div class="mt-16 xl:mt-48">
     <div class="relative w-full">
       <div class="w-80 mx-auto">
-        <img src="{{ $footer_logos->l1['url'] }}" alt="{{ $footer_logos->l1['alt'] }}" class="p-4 border border-white mb-8">
-        <img src="{{ $footer_logos->l2['url'] }}" alt="{{ $footer_logos->l2['alt'] }}">
+        <img data-src="{{ $footer_logos->l1['url'] }}" alt="{{ $footer_logos->l1['alt'] }}" class="lozad p-4 border border-white mb-8">
+        <img data-src="{{ $footer_logos->l2['url'] }}" alt="{{ $footer_logos->l2['alt'] }}" class="lozad">
       </div>
       <div class="xl:absolute text-white text-center xl:text-left mt-16 xl:mt-0" style="right:12rem; top:0;">
         <p class="text-3xl mb-6">{{ $contact_details->phone }}</p>

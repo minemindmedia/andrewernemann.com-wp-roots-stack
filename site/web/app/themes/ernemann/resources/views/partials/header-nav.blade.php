@@ -15,8 +15,25 @@
     </div>
     <div class="w-1/3 px-4 py-2 m-2">
       <div class="contact md:mr-8 md:mt-2">
-        <i class="inline-block md:mr-3 float-right"><img data-src="{{ $header->email }}" class="lozad block w-6 md:w-8 mr-auto mt-1"></i> 
+        <i class="inline-block md:mr-3 float-right">
+          <a href="tel:{{ $header->email_address }}">
+          <img data-src="{{ $header->email }}" class="lozad block w-6 md:w-8 mr-auto mt-1">
+          </a>
+        </i> 
+        
+        <i class="lg:inline-block xl:hidden mr-4 md:mr-10 float-right">
+          <a href="tel:{{ $header->phone_number }}">
+          <img data-src="{{ $header->phone }}" class="lozad block w-6 md:w-8 mr-auto"></i>
+        </a>
+        <button class="hidden sm:hidden md:hidden lg:hidden xl:inline-block phoneTooltip_open float-right">
         <i class="inline-block mr-4 md:mr-10 float-right"><img data-src="{{ $header->phone }}" class="lozad block w-6 md:w-8 mr-auto"></i>
+      </button>
+
+        
+        <section id="phoneTooltip">
+          <h2 class="text-white">{{ $header->phone_number }}</h2>
+        </section>
+
       </div>
     </div>
   </div>

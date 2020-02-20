@@ -35,6 +35,8 @@ class App extends Controller
     {
         return (object)array(
             'logo' => get_field('logo', 'options'),
+            'phone_number' => get_field('phone_number', 'options'),
+            'email_address' => get_field('email_address', 'options'),
             'hamburger' => get_field('hamburger_menu', 'options'),
             'arrow' => get_field('header_footer_arrow', 'options'),
             'phone' => get_field('phone_icon', 'options'),

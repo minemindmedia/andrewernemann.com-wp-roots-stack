@@ -8,10 +8,10 @@
             <span>{{ $property_details->city }}</span>
             <span class="ml-4 pl-5">${{ $property_price->price }}</span>
             <span class="ml-4 pl-5 last">{{ $property_details->bedrooms }} Bedrooms</span>
-          <img src="@asset('images/gallery-next.svg')" alt="Next Arrow">
+          <img data-src="@asset('images/gallery-next.svg')" alt="Next Arrow" class="lozad">
           </p>
         </div>
-        <img src="<?php echo $images[0]['sizes']['large']; ?>" alt="<?php echo $images[0]['alt']; ?>" style="width:100%;" />
+        <img data-src="<?php echo $images[0]['sizes']['large']; ?>" alt="<?php echo $images[0]['alt']; ?>" style="width:100%;" class="lozad" />
       </a>
     @endif
 </article>

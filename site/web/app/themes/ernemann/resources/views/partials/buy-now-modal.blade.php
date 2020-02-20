@@ -3,8 +3,8 @@
     <div class="modal-overlay absolute w-full h-full bg-black opacity-90"></div>
     <div class="modal-container fixed w-full h-full z-50 overflow-y-auto ">
         <div class="header h-10 mr-10 ml-10 mt-10">
-            <img src="{{ $header->logo }}" class="block w-32 mr-auto float-left">
-            <img src="{{ $header->close }}" class="modal-close block w-16 mr-auto float-right cursor-pointer">
+            <img data-src="{{ $header->logo }}" class="lozad block w-32 mr-auto float-left">
+            <img data-src="{{ $header->close }}" class="lozad modal-close block w-16 mr-auto float-right cursor-pointer">
         </div>
         <div class="modal-content container mx-auto h-auto text-left p-4">
             <div class="menu uppercase leading-loose text-3xl mt-16">

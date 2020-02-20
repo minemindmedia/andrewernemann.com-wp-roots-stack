@@ -15,11 +15,11 @@
     </div>
     <div class="w-full lg:w-1/2 xl:w-1/5 h-128 lg:h-auto " style="background: url('{{ $meet_andrew->photo['url'] }}'); background-size: cover; background-position: center center;"></div>
     <div id="andrewModal" class="siteModal teamModal h-full w-full text-white overflow-y-scroll">
-        <a href="#" class="andrewModal_close siteModalClose"><img src="@asset('images/close-dark.svg')" class="block w-16 cursor-pointer"></a>
+        <a href="#" class="andrewModal_close siteModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-16 cursor-pointer"></a>
         <div class="lg:w-3/4 mx-8 lg:mx-auto mt-24 lg:mt-16 mb-16 ">
             <div class="lg:flex text-2xl leading-normal text-primary">
                 <div class="flex-1 px-6 pt-12">
-                    <img src="{{ $meet_andrew->photo['url'] }}" alt="{{ $meet_andrew->photo['alt'] }}" class="md:w-64 float-left mr-8 mb-8">
+                    <img data-src="{{ $meet_andrew->photo['url'] }}" alt="{{ $meet_andrew->photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8">
                     <h2 class="uppercase text-2xl mb-8">{{ $meet_andrew->title }}</h2>
                     {!! $meet_andrew->biography_one !!}
                 </div>
@@ -52,11 +52,11 @@
             </div>
         </div>
         <div id="teamModal-{{ $k }}" class="teamModal h-full w-full text-primary overflow-y-scroll">
-            <a href="#" class="teamModal-{{ $k }}_close teamModalClose"><img src="@asset('images/close-dark.svg')" class="block w-8 xl:w-16 cursor-pointer"></a>
+            <a href="#" class="teamModal-{{ $k }}_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-8 xl:w-16 cursor-pointer"></a>
             <div class="lg:w-3/4 mx-4 lg:mx-auto mt-24 lg:mt-16 mb-16 ">
                 <div class="lg:flex md:text-2xl leading-normal">
                     <div class="flex-1 px-6 pt-6 lg:pt-12 pb-0">
-                        <img src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="md:w-64 float-left mr-8 mb-8">
+                        <img data-src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8">
                         <h2 class="uppercase text-2xl mb-8">{{ $title }}</h2>
                         {!! $biography_one !!}
                     </div>

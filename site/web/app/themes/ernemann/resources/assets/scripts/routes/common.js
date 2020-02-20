@@ -13,6 +13,11 @@ export default {
       transition: '0.2s',
       scrolllock: true,
     });
+    $('#phoneTooltip').popup({
+      type: 'tooltip',
+      offsettop: 0,
+      offsetleft: -125,
+    });
     return jQueryPopupOverlay;
   },
   finalize() {
