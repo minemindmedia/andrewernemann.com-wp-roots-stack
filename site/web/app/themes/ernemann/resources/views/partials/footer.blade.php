@@ -3,9 +3,7 @@
     <p class="text-3xl text-white uppercase font-bold">{{ $work_with_us->heading }}</p>
     <p class="text-white text-2xl leading-normal mt-4">{{ $work_with_us->subheading }}</p>
     <p class="text-white text-2xl leading-normal mt-4 lg:w-2/5 mx-auto">{{ $work_with_us->content }}</p>
-    <a href="">
-      <button class="py-3 px-8 mt-16 border border-white hover:border-transparent uppercase text-lg text-white">Contact us</button>
-    </a>
+      <a class="contactModal_open inline-block py-3 px-8 mt-16 border border-white  uppercase text-lg text-white cursor-pointer">Contact us</a>
   </div>
   <div class="mt-16 xl:mt-48">
     <div class="relative w-full">
@@ -15,7 +13,7 @@
       </div>
       <div class="xl:absolute text-white text-center xl:text-left mt-16 xl:mt-0" style="right:12rem; top:0;">
         <p class="text-3xl mb-6">{{ $contact_details->phone }}</p>
-        <a href="{{ $contact_details->email }}" class="block text-white uppercase no-underline text-3xl mb-6">Send an email</a>
+        <a href="" class="contactModal_open block text-white uppercase no-underline text-3xl mb-6">Send an email</a>
         <p class="text-xl mb-6">{!! $contact_details->address !!}</p>
         <p class="text-lg">{!! $contact_details->copyright !!}</p>
       </div>
