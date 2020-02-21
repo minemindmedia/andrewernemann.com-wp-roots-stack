@@ -1,9 +1,9 @@
 <div class="lg:flex p-8 md:p-16 text-center text-grey">
-    <div class="w-full md:mr-8 mb-8 lg:mb-0 px-0 px-4 lg:px-20 lg:px-8 py-8 lg:py-32  border border-solid">
+    <div class="w-full md:mr-8 mb-8 lg:mb-0 px-0 px-4 lg:px-20 lg:px-8 py-8 lg:py-32  border border-quaternary">
       <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $two_up_section->heading }}</h2>
       <p class="text-md md:text-2xl leading-normal">{{ $two_up_section->content }}</p>
     </div>
-    <div class="w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-32 border border-solid">
+    <div class="w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-32 border border-quaternary">
         <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $two_up_section->heading_2 }}</h2>
         <p class="text-md md:text-2xl leading-normal">{{ $two_up_section->content_2 }}</p>
     </div>
@@ -49,7 +49,7 @@
         <div class="lg:w-1/3 p-8 lg:p-16">
         {!! $tabs->one_l !!}
         <a href="{{ $tabs->one_burl['url'] }}" target="_blank" class="no-underline outline-none">
-            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-grey bg-transparent uppercase text-sm text-grey outline-none font-medium">{{ $tabs->one_btxt }}</button> 
+            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-quaternary bg-transparent uppercase text-sm text-primary outline-none font-medium">{{ $tabs->one_btxt }}</button> 
         </a>
         </div>
         <div class="lg:w-2/3 p-8 lg:p-16">
@@ -60,7 +60,7 @@
         <div class="lg:w-1/3 p-8 lg:p-16">
         {!! $tabs->two_l !!}
         <a href="{{ $tabs->two_burl['url'] }}" target="_blank" class="no-underline outline-none">
-            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-grey bg-transparent uppercase text-sm text-grey outline-none font-medium">{{ $tabs->one_btxt }}</button> 
+            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-quaternary bg-transparent uppercase text-sm text-primary outline-none font-medium">{{ $tabs->one_btxt }}</button> 
         </a>
         </div>
         <div class="lg:w-2/3 p-8 lg:p-16">
@@ -71,7 +71,7 @@
         <div class="lg:w-1/3 p-8 lg:p-16">
         {!! $tabs->three_l !!}
         <a href="{{ $tabs->three_burl['url'] }}" target="_blank" class="no-underline outline-none">
-            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-grey bg-transparent uppercase text-sm text-grey outline-none font-medium">{{ $tabs->one_btxt }}</button> 
+            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-quaternary bg-transparent uppercase text-sm text-primary outline-none font-medium">{{ $tabs->one_btxt }}</button> 
         </a>
         </div>
         <div class="lg:w-2/3 p-8 lg:p-16">
@@ -83,7 +83,7 @@
     <div class="h-full bg-ae-green-bg">
         <div class="flex">
             <div class="relative m-8 lg:m-16 p-4 lg:p-16 text-center">
-                <h2 class="uppercase text-white lg:text-3xl mb-6">{{ $covered->heading }}</h2>
+                <h2 class="uppercase text-white text-xl lg:text-3xl mb-6">{{ $covered->heading }}</h2>
                 <p class="text-md md:text-2xl mb-8 text-white">{{ $covered->content }}</p>
                 <img data-src="@asset('images/flow.svg')" alt="" class="lozad">
                 <div class="mt-8 lg:mt-0 lg:absolute w-64 text-sm lg:text-lg lg:text-left" style="right:0; bottom: 3rem;">{{ $covered->disclaimer }}</div>

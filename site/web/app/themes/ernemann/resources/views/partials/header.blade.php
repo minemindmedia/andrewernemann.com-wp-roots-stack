@@ -15,7 +15,7 @@
           <img data-src="{{ $header->logo }}" class="lozad w-32 sm:w-48 md:w-64 lg:w-80 pt-1 md:pt-4 pr-1 md:pr-4 pb-0 md:pb-3 pl-1 md:pl-4">
         </div>
         <div class="w-full">
-        <p class="w-1/2 mx-auto text-sm sm:text-xl md:text-3xl mt-4 md:mt-8 lg:mt-24">{!! $headerhero->subheading !!}</p>
+        <p class="w-1/2 mx-auto text-sm sm:text-xl md:text-5xl mt-4 md:mt-8 lg:mt-24">{!! $headerhero->subheading !!}</p>
         </div>
       @elseif(is_archive())
         <h2 class="w-auto font-normal text-lg md:text-4xl text-center border border-white px-2 lg:px-6 py-2 lg:py-12 ">

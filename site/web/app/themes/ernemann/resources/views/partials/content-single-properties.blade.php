@@ -1,35 +1,35 @@
 @include('partials.buy-now-modal')
 <article @php post_class() @endphp>
-  <header class="p-8 md:p-16 text-center text-grey">
+  <header class="p-8 md:p-16 text-center text-primary">
     <div class="w-full lg:mb-0 px-4 lg:px-8 py-8 lg:py-32  border border-quarternary">
       @if ($property_details->address)
-        <h1 class="w-full uppercase text-grey text-xl lg:text-3xl mb-6">
+        <h1 class="w-full uppercase text-primary text-lg lg:text-3xl mb-6">
           @if ($property_details->address)
             <span class="block lg:inline-block">
               {{ $property_details->address }}
             </span>
           @endif
           @if ($property_details->city)
-            <span class="lg:border-l-3 lg:border-grey lg:pl-5 lg:ml-4 block lg:inline-block">
+            <span class="lg:border-l-3 lg:border-primary lg:pl-5 lg:ml-4 block lg:inline-block">
               {{ $property_details->city }}
             </span>
           @endif
           @if ($property_details->neighborhood)
-            <span class="lg:border-l-3 lg:border-grey lg:pl-5 lg:ml-4 block lg:inline-block">
+            <span class="lg:border-l-3 lg:border-primary lg:pl-5 lg:ml-4 block lg:inline-block">
               {{ $property_details->neighborhood }}
             </span>
           @endif
         </h1>
       @endif
       @if ($property_price->price)
-        <h2 class="text-xl lg:text-3xl">
+        <h2 class="text-lg lg:text-3xl">
           <span>$</span>{{ $property_price->price }}
         </h2>
       @endif
       <div class="flex flex-wrap justify-center w-4/5 lg:w-3/5 ml-auto mr-auto mt-16">
         @if ($property_details->bedrooms)
           <div class="w-3/4 lg:flex-1 p-0 mx-5 pb-8 lg:pb-0">
-            <p class="uppercase text-grey mb-2 font-medium">Bedrooms:</p>
+            <p class="uppercase text-primary mb-2 font-medium">Bedrooms:</p>
             <div class="border border-quarternary p-3 text-xl ">
               {{ $property_details->bedrooms }} 
             </div>  
@@ -37,7 +37,7 @@
         @endif
         @if ($property_details->bathrooms)
           <div class="w-3/4 lg:flex-1 p-0 mx-5 pb-8 lg:pb-0 ">
-            <p class="uppercase text-grey mb-2 font-medium">Bathrooms:</p>
+            <p class="uppercase text-primary mb-2 font-medium">Bathrooms:</p>
             <div class="border border-quarternary p-3 text-xl ">
               {{ $property_details->bathrooms }} 
             </div>  
@@ -45,7 +45,7 @@
         @endif
         @if ($property_details->sqft)
           <div class="w-3/4 lg:flex-1 p-0 mx-5 pb-8 lg:pb-0 ">
-            <p class="uppercase text-grey mb-2 font-medium">Square Feet:</p>
+            <p class="uppercase text-primary mb-2 font-medium">Square Feet:</p>
             <div class="border border-quarternary p-3 text-xl ">
               {{ $property_details->sqft }} 
             </div>  
@@ -53,7 +53,7 @@
         @endif
         @if ($property_details->acres)
           <div class="w-3/4 lg:flex-1 p-0 mx-5 pb-8 lg:pb-0 ">
-            <p class="uppercase text-grey mb-2 font-medium">Acres:</p>
+            <p class="uppercase text-primary mb-2 font-medium">Acres:</p>
             <div class="border border-quarternary p-3 text-xl ">
               {{ $property_details->acres }} 
             </div>  
@@ -61,7 +61,7 @@
         @endif
         @if ($property_details->lot)
           <div class="w-3/4 lg:flex-1 p-0 mx-5 pb-8 lg:pb-0 ">
-            <p class="uppercase text-grey mb-2 font-medium">Lot Size:</p>
+            <p class="uppercase text-primary mb-2 font-medium">Lot Size:</p>
             <div class="border border-quarternary p-3 text-xl ">
               {{ $property_details->lot }} 
             </div>  
@@ -69,7 +69,7 @@
         @endif
       </div>
       @if ($property_details->description)
-      <p class="w-4/5 mx-auto mt-4 lg:mt-16 text-base text-xl sm:text-xl lg:text-2xl leading-normal">
+      <p class="w-4/5 mx-auto mt-4 lg:mt-16 text-base text-lg sm:text-xl lg:text-2xl leading-normal">
         {{ $property_details->description }} 
       </p>
       @endif
@@ -139,11 +139,11 @@
       </div>
     </div>
   </div>
-  <div class="lg:flex p-8 md:p-16 text-center text-grey bg-grey-lightest">
+  <div class="lg:flex p-8 md:p-16 text-center text-primary bg-grey-lightest">
     <div class="w-full px-4 md:px-8 py-8 lg:py-32 border border-quarternary border-white">
       <div class="w-4/5 mx-auto">
         <a href="" class="buyModal_open buy-open inline-block text-lg sm:text-4xl font-normal no-underline text-red px-16 py-8 border border-quarternary border-red capitalize mb-12">{{ $buy_now->heading }}</a>
-        <p class="text-center text-xl lg:text-2xl capitalize leading-normal">{!! $buy_now->content !!}</p> 
+        <p class="text-center text-lg lg:text-2xl capitalize leading-normal">{!! $buy_now->content !!}</p> 
       </div>
     </div>
   </div>
@@ -156,10 +156,10 @@
           </div>
         </div>
     </div>
-  <div class="p-8 md:p-16 text-grey bg-white">
+  <div class="p-8 md:p-16 text-primary bg-white">
     <div class="xl:flex w-full px-4 md:px-16 py-8 lg:py-16 border border-quarternary">
       <div class="xl:w-1/2 text-center">
-      <h2 class="uppercase text-xl lg:text-3xl mb-8">{{ $schedule->heading }}</h2>  
+      <h2 class="uppercase text-lg lg:text-3xl mb-8">{{ $schedule->heading }}</h2>  
       <p class="w-2/3 mx-auto text-lg lg:text-2xl leading-normal mb-8 xl:mb-0">{{ $schedule->content }}</p>
       </div>
       <div class="xl:w-1/2">
@@ -167,7 +167,7 @@
       </div>
     </div>
   </div>
-  <div class="lg:flex text-center text-grey mb-16">
+  <div class="lg:flex text-center text-primary mb-16">
     <div class="lg:w-1/2" style="background-image: url('{!! $location->bkg !!}')">
       <div class="h-full bg-ae-green-bg">
       <div class="w-full p-16  ">

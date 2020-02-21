@@ -1,7 +1,7 @@
 <div class="mt-0 py-0 w-screen h-full">
     <div class="flex">
         <div class="my-8 mx-8 xl:m-16 p-8 md:p-16 border border-quaternary text-center text-primary">
-            <h2 class="uppercase lg:text-3xl mb-6">{{ $who_we_are->heading }}</h2>
+            <h2 class="uppercase text-lg lg:text-3xl mb-6">{{ $who_we_are->heading }}</h2>
             <div class="mx-8 xl:mx-80 text-md md:text-2xl mb-8 leading-normal">{!! $who_we_are->subheading !!}</div>
             <div class="mx-8 xl:mx-80 text-md md:text-2xl mb-8 leading-normal">{!! $who_we_are->content !!}</div>
         </div>
@@ -81,7 +81,7 @@
       <div class="flex">
           <div class="m-8 lg:w-1/2 lg:mx-auto xl:my-64">
             <div class="p-8 xl:py-24 xl:px-16 border border-white text-center">
-            <h2 class="uppercase lg:text-3xl mb-6">{{ $better_together->title }}</h2>
+            <h2 class="uppercase text-lg lg:text-3xl mb-6">{{ $better_together->title }}</h2>
             <p class="text-md md:text-2xl mb-8">{!! $better_together->content !!}</p>
             </div>
         </div>

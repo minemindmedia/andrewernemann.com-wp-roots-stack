@@ -32,7 +32,7 @@
   }
 
   input[type="button"] {
-    border: 1px solid #f5f4ef;
+    border: 1px solid #9bafb9;
     background-color: transparent;
     color: black;
     text-transform: uppercase;
@@ -86,7 +86,7 @@
     background-color: transparent;
     font-size: 18px;
     height: 45px;
-    border: 1px solid #f5f4ef;
+    border: 1px solid #9bafb9;
 
     @media (min-width: 1024px) {
       margin-bottom: 0.75rem;
@@ -103,11 +103,11 @@
   }
 
   input[aria-invalid="false"] {
-    border-color: #f5f4ef !important;
+    border-color: #9bafb9 !important;
   }
 
   .nf-pass.field-wrap .nf-field-element::after {
-    color: #f5f4ef;
+    color: #9bafb9;
   }
 
   input[aria-invalid="true"] {
@@ -153,9 +153,9 @@
 
   input[type="button"] {
     display: block;
-    border: 1px solid #f5f4ef;
+    border: 1px solid #9bafb9;
     background-color: transparent;
-    color: #f5f4ef;
+    color: #9bafb9;
     text-transform: uppercase;
     padding: 0 1.5rem;
     height: 40px;
