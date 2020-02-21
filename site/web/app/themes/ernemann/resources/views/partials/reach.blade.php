@@ -6,7 +6,7 @@
         <div class="py-2 px-4 mb-8">
             <img data-src="{{ $reach->logo['url'] }}" alt="{{ $reach->logo['alt'] }}" class="lozad h-16">
         </div>
-            <a href="{{ $reach->btnurl }}">
+            <a href="{{ $reach->btnpdf['url'] }}">
                 <button class="bg-white py-3 px-8 border border-primary uppercase text-lg">{{ $reach->btntxt }}</button>
             </a>
         </div>

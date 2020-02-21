@@ -111,7 +111,7 @@ class App extends Controller
             'content'     => $field['content'] ?? null,
             'logo'     => $field['logo'] ?? null,
             'btntxt'     => $field['button_text'] ?? null,
-            'btnurl'     => $field['button_url'] ?? null,
+            'btnpdf'     => $field['button_pdf'] ?? null,
         ];
     }
 

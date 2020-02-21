@@ -19,6 +19,10 @@ export default {
         transition: '0.2s',
         scrolllock: true,
     });
+    $('#directionsModal').popup({
+        transition: '0.2s',
+        scrolllock: true,
+      });
     return jQueryPopupOverlay;
     
 

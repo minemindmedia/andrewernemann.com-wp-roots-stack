@@ -43,12 +43,18 @@ class PageOurApproach extends Controller
             'one_title'     => $field['tab_title_1'] ?? null,
             'one_l'     => $field['tab_1_left'] ?? null,
             'one_r'     => $field['tab_1_right'] ?? null,
+            'one_btxt'     => $field['tab_1_button_text'] ?? null,
+            'one_burl'     => $field['tab_1_button_pdf'] ?? null,
             'two_title'     => $field['tab_title_2'] ?? null,
             'two_l'     => $field['tab_2_left'] ?? null,
             'two_r'     => $field['tab_2_right'] ?? null,
+            'two_btxt'     => $field['tab_2_button_text'] ?? null,
+            'two_burl'     => $field['tab_2_button_pdf'] ?? null,
             'three_title'     => $field['tab_title_3'] ?? null,
             'three_l'     => $field['tab_3_left'] ?? null,
             'three_r'     => $field['tab_3_right'] ?? null,
+            'three_btxt'     => $field['tab_3_button_text'] ?? null,
+            'three_burl'     => $field['tab_3_button_pdf'] ?? null,
         ];
     }
 

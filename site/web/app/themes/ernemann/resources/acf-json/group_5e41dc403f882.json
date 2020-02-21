@@ -395,6 +395,44 @@
                     "delay": 0
                 },
                 {
+                    "key": "field_5e4f0ee283bee",
+                    "label": "Tab 1 Button Text",
+                    "name": "tab_1_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e4f0f2a83bf1",
+                    "label": "Tab 1 Button PDF",
+                    "name": "tab_1_button_pdf",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "pdf"
+                },
+                {
                     "key": "field_5e4322192b556",
                     "label": "Tab 2",
                     "name": "",
@@ -468,6 +506,44 @@
                     "delay": 0
                 },
                 {
+                    "key": "field_5e4f0f0083bef",
+                    "label": "Tab 2 Button Text",
+                    "name": "tab_2_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e4f0f4d83bf2",
+                    "label": "Tab 2 Button PDF",
+                    "name": "tab_2_button_pdf",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "pdf"
+                },
+                {
                     "key": "field_5e43221b2b557",
                     "label": "Tab 3",
                     "name": "",
@@ -539,6 +615,44 @@
                     "toolbar": "full",
                     "media_upload": 0,
                     "delay": 0
+                },
+                {
+                    "key": "field_5e4f0f0c83bf0",
+                    "label": "Tab 3 Button Text",
+                    "name": "tab_3_button_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e4f0f6283bf3",
+                    "label": "Tab 3 Button PDF",
+                    "name": "tab_3_button_pdf",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "pdf"
                 }
             ]
         },
@@ -688,5 +802,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1581644188
+    "modified": 1582239607
 }

@@ -131,13 +131,14 @@
   </div>
 </div>
 <div class="lg:flex p-8 md:p-16 text-center text-grey bg-grey-lightest">
-  <div class="w-full px-4 md:px-8 py-8 lg:py-16 border border-solid">
+  <div class="w-full px-4 md:px-8 py-8 lg:py-16 border border-white">
+    <img src="@asset('images/newslogos.png')" alt="News Logos" class="mb-8">
     <div class="press-slider w-4/5 mx-auto">
       @foreach($press as $article)
         <div class="px-8">
           <p class="text-lg lg:text-3xl uppercase mb-8 font-bold">{!! $article['heading'] !!}</p>
           <h3 class="text-md lg:text-2xl mb-8 font-normal">{!! $article['source'] !!}</h3>
-          <a href="{{ $article['link'] }}">
+          <a href="{{ $article['link'] }}" target="_blank">
             <button class="py-3 px-8 border border-grey bg-transparent uppercase text-lg text-grey">Read it</button> 
             </a>
         </div>

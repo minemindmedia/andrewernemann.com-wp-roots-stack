@@ -48,6 +48,9 @@
     <div id="tab-1" class="lg:flex bg-tertiary lg:text-2xl leading-normal text-primary">
         <div class="lg:w-1/3 p-8 lg:p-16">
         {!! $tabs->one_l !!}
+        <a href="{{ $tabs->one_burl['url'] }}" target="_blank" class="no-underline outline-none">
+            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-grey bg-transparent uppercase text-sm text-grey outline-none font-medium">{{ $tabs->one_btxt }}</button> 
+        </a>
         </div>
         <div class="lg:w-2/3 p-8 lg:p-16">
         {!! $tabs->one_r !!}
@@ -56,6 +59,9 @@
     <div id="tab-2" class="lg:flex bg-tertiary lg:text-2xl leading-normal text-primary">
         <div class="lg:w-1/3 p-8 lg:p-16">
         {!! $tabs->two_l !!}
+        <a href="{{ $tabs->two_burl['url'] }}" target="_blank" class="no-underline outline-none">
+            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-grey bg-transparent uppercase text-sm text-grey outline-none font-medium">{{ $tabs->one_btxt }}</button> 
+        </a>
         </div>
         <div class="lg:w-2/3 p-8 lg:p-16">
         {!! $tabs->two_r !!}
@@ -64,6 +70,9 @@
     <div id="tab-3" class="lg:flex bg-tertiary lg:text-2xl leading-normal text-primary">
         <div class="lg:w-1/3 p-8 lg:p-16">
         {!! $tabs->three_l !!}
+        <a href="{{ $tabs->three_burl['url'] }}" target="_blank" class="no-underline outline-none">
+            <button class="block w-auto mx-auto mt-12 py-3 px-8 border border-grey bg-transparent uppercase text-sm text-grey outline-none font-medium">{{ $tabs->one_btxt }}</button> 
+        </a>
         </div>
         <div class="lg:w-2/3 p-8 lg:p-16">
         {!! $tabs->three_r !!}

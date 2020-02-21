@@ -26,9 +26,11 @@
                 @if ( $meet_andrew->biography_two )
                 <div class="flex-1 px-6 pt-12">
                     {!! $meet_andrew->biography_two !!}
+                    
                 </div>
                 @endif
             </div>
+            <a href="#" class="andrewModal_close float-right m-8 uppercase no-underline text-primary" style="color:#ed4e2e;">Close</a>
         </div>
     </div>
 </div>

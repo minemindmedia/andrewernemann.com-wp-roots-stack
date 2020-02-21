@@ -49,7 +49,7 @@ let colors = {
   'primary': '#4D4D4F',
   'secondary': '#ed4e2e',
   'tertiary': '#f5f4ef',
-  'quaternary': '#92a8b1',
+  'quaternary': '#9bafb9',
 
   'transparent': 'transparent',
 

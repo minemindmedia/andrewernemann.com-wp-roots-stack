@@ -162,9 +162,9 @@
                 },
                 {
                     "key": "field_5e4344ecc6b62",
-                    "label": "Button URL",
-                    "name": "button_url",
-                    "type": "text",
+                    "label": "Button PDF",
+                    "name": "button_pdf",
+                    "type": "file",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -173,11 +173,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "pdf"
                 }
             ]
         }
@@ -199,5 +199,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1582231134
+    "modified": 1582240877
 }
