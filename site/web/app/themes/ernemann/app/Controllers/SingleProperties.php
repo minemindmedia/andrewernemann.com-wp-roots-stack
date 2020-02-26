@@ -36,15 +36,11 @@ class SingleProperties extends Controller
         );
     }
 
-    public function videoSlideshow()
+    public function youtube()
     {
-        $field = get_field('video__slideshow');
+        $field = get_field('youtube');
         return (object) [
-            'video_slideshow'     => $field['video_or_slideshow'] ?? null,
-            'poster'     => $field['video_poster'] ?? null,
-            'mp4'     => $field['mp4_video'] ?? null,
-            'webm'     => $field['webm_video'] ?? null,
-            'slideshow'     => $field['slideshow'] ?? null,
+            'id'     => $field['id'] ?? null,
         ];
     }
 

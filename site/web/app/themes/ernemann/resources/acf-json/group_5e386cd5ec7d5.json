@@ -287,7 +287,7 @@
         },
         {
             "key": "field_5e386fc814371",
-            "label": "Video \/ Slideshow",
+            "label": "YouTube",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -303,8 +303,8 @@
         },
         {
             "key": "field_5e39e9b69b5e5",
-            "label": "Video \/ Slideshow",
-            "name": "video__slideshow",
+            "label": "YouTube",
+            "name": "youtube",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -317,10 +317,10 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_5e386fe914372",
-                    "label": "Video or Slideshow",
-                    "name": "video_or_slideshow",
-                    "type": "radio",
+                    "key": "field_5e56ffb6509ce",
+                    "label": "YouTube ID",
+                    "name": "id",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -329,135 +329,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "choices": {
-                        "video": "Video",
-                        "slideshow": "Slideshow"
-                    },
-                    "allow_null": 0,
-                    "other_choice": 0,
                     "default_value": "",
-                    "layout": "vertical",
-                    "return_format": "value",
-                    "save_other_choice": 0
-                },
-                {
-                    "key": "field_5e39f23cf8ba1",
-                    "label": "Video Poster",
-                    "name": "video_poster",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5e386fe914372",
-                                "operator": "==",
-                                "value": "video"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "preview_size": "large",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5e38702f14373",
-                    "label": "MP4 Video",
-                    "name": "mp4_video",
-                    "type": "file",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5e386fe914372",
-                                "operator": "==",
-                                "value": "video"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "library": "all",
-                    "min_size": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5e38707014374",
-                    "label": "Webm Video",
-                    "name": "webm_video",
-                    "type": "file",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5e386fe914372",
-                                "operator": "==",
-                                "value": "video"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "library": "all",
-                    "min_size": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_5e38707c14375",
-                    "label": "Slideshow",
-                    "name": "slideshow",
-                    "type": "gallery",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5e386fe914372",
-                                "operator": "==",
-                                "value": "slideshow"
-                            }
-                        ]
-                    ],
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "min": "",
-                    "max": "",
-                    "insert": "append",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 }
             ]
         },
@@ -1143,5 +1019,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1581019213
+    "modified": 1582760800
 }

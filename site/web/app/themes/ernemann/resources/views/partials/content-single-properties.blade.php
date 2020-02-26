@@ -75,27 +75,11 @@
       @endif
     </div>
   </header>
+  
   <div class="w-full">
-    @if ( $video_slideshow->video_slideshow == "video")
-    <video id="video-player"
-      class="video-js vjs-default-skin vjs-big-play-centered" 
-      controls
-      preload="auto"
-      width="640"
-      height="264"
-      poster="{{ $video_slideshow->poster }}"
-      data-setup='{"fluid": true}'>
-      <source src="{{ $video_slideshow->mp4 }}" type='video/mp4' />
-      <source src="{{ $video_slideshow->webm }}" type='video/webm' />
-    </video>
-    @else 
-    <div class="single-gallery_two">
-        @foreach( $video_slideshow->slideshow as $image )
-        <img data-src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="lozad" />
-        @endforeach
-    </div>
-    @endif
+    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ $youtube->id }}' frameborder='0' allowfullscreen></iframe></div>
   </div>
+  
   <div class="text-white uppercase no-underline mt-0 py-0 w-screen h-full bg-cover bg-bottom" style="background-image: url('{!! $documents_background->bkg !!}')">
     <div class="h-full bg-ae-green-bg">
       <div class="flex">
