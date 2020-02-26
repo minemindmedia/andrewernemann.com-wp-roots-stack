@@ -22,6 +22,7 @@
     preload="auto"
     width="640"
     height="264"
+    autoplay="true"
     poster="{{ $videosection->poster }}"
     data-setup='{"fluid": true}'>
     <source src="{{ $videosection->mp4 }}" type='video/mp4' />
@@ -59,7 +60,7 @@
       <div class="flex content-center flex-wrap justify-center h-full">
       <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectiontwo->headingTwo }}</h2>
       <p class="w-full text-md md:text-2xl mb-8 leading-normal">{!! $towupsectiontwo->subheadingTwo !!}</p> 
-      <button class="block py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectiontwo->buttonTextTwo }}</button>
+      <button class="mrModal_open block py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectiontwo->buttonTextTwo }}</button>
       </div>
     </div>
   </div>

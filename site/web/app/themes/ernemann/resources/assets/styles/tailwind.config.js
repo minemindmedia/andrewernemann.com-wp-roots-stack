@@ -44,7 +44,7 @@ View the full documentation at https://tailwindcss.com.
 */
 
 let colors = {
-  'ae-green-bg': 'rgba(65, 95, 102, .65)',
+  'ae-green-bg': 'rgba(59, 105, 96, 0.56)',
   
   'primary': '#4D4D4F',
   'secondary': '#ed4e2e',

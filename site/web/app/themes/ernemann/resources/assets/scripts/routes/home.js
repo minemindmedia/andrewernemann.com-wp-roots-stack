@@ -53,11 +53,12 @@ export default {
     });
 
     var video = videojs('home-player');
-    video.on('pause', function() {
-      this.bigPlayButton.show();
+    
+      video.on('pause', function() {
+        this.bigPlayButton.show();
       
-      video.one('play', function() {
-        this.bigPlayButton.hide();
+        video.one('play', function() {
+          this.bigPlayButton.hide();
       });
     });
     return jQueryPopupOverlay;
