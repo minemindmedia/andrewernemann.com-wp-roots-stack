@@ -971,4 +971,21 @@ module.exports = {
     separator: ':',
   },
 
+    /*
+  |-----------------------------------------------------------------------------
+  | Flex Order
+  |-----------------------------------------------------------------------------
+  |
+  | Here is where you can tweak advanced configuration options. We recommend
+  | leaving these options alone unless you absolutely need to change them.
+  |
+  */
+
+  theme: {
+    order: {
+      first: '-9999',
+      last: '9999',
+    }
+  }
+
 }

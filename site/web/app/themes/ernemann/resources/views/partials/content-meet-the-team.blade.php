@@ -7,16 +7,17 @@
         </div>
     </div>
 </div>
+
 <div class="lg:flex mb-8 lg:mb-16">
+    <div class="w-full lg:w-1/2 xl:w-1/5 h-128 lg:h-auto order-last" style="background: url('{{ $meet_andrew->photo['url'] }}'); background-size: cover; background-position: center center; order:99999;"></div>
     <div class="w-full lg:w-1/2 xl:w-4/5 text-center text-primary bg-tertiary py-8 xl:py-16 px-8 xl:px-48">
         <h3 class="lg:text-3xl mb-8">{{ $meet_andrew->title }}</h3>
         <div class="lg:text-2xl leading-normal mb-16">{!! $meet_andrew->statement !!}</div>
         <a href="" class="andrewModal_open inline-block py-3 px-8 border border-quaternary uppercase text-lg text-primary outline-none no-underline">Read more</a>
     </div>
-    <div class="w-full lg:w-1/2 xl:w-1/5 h-128 lg:h-auto " style="background: url('{{ $meet_andrew->photo['url'] }}'); background-size: cover; background-position: center center;"></div>
     <div id="andrewModal" class="siteModal teamModal h-full w-full text-white overflow-y-scroll">
-        <a href="#" class="andrewModal_close siteModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-16 cursor-pointer"></a>
-        <div class="lg:w-3/4 mx-8 lg:mx-auto mt-24 lg:mt-16 mb-16 ">
+        <div class="lg:w-3/4 mx-8 lg:mx-auto mt-8 lg:mt-0 mb-16 ">
+            <a href="#" class="andrewModal_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-8 float-right mr-4 cursor-pointer"></a>
             <div class="lg:flex text-2xl leading-normal text-primary">
                 <div class="flex-1 px-6 pt-12">
                     <img data-src="{{ $meet_andrew->photo['url'] }}" alt="{{ $meet_andrew->photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8">
@@ -54,11 +55,11 @@
             </div>
         </div>
         <div id="teamModal-{{ $k }}" class="teamModal h-full w-full text-primary overflow-y-scroll">
-            <a href="#" class="teamModal-{{ $k }}_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-8 xl:w-16 cursor-pointer"></a>
-            <div class="lg:w-3/4 mx-4 lg:mx-auto mt-24 lg:mt-16 mb-16 ">
+            <div class="lg:w-3/4 mx-8 lg:mx-auto mt-8 lg:mt-0 mb-16 ">
+                <a href="#" class="teamModal-{{ $k }}_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-8 float-right mr-4 cursor-pointer"></a>
                 <div class="lg:flex md:text-2xl leading-normal">
                     <div class="flex-1 px-6 pt-6 lg:pt-12 pb-0">
-                        <img data-src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8">
+                        <img data-src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8 mt-2">
                         <h2 class="uppercase text-2xl mb-8">{{ $title }}</h2>
                         {!! $biography_one !!}
                     </div>

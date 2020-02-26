@@ -156,31 +156,39 @@
           </div>
         </div>
     </div>
+
+
+
+
   <div class="p-8 md:p-16 text-primary bg-white">
     <div class="xl:flex w-full px-4 md:px-16 py-8 lg:py-16 border border-quarternary">
       <div class="xl:w-1/2 text-center">
-      <h2 class="uppercase text-lg lg:text-3xl mb-8">{{ $schedule->heading }}</h2>  
-      <p class="w-2/3 mx-auto text-lg lg:text-2xl leading-normal mb-8 xl:mb-0">{{ $schedule->content }}</p>
+        <div class="flex content-center flex-wrap h-full">
+          <h2 class="block uppercase text-lg lg:text-3xl mb-8 mx-auto">{{ $schedule->heading }}</h2>  
+          <p class="w-2/3 mx-auto text-lg lg:text-2xl leading-normal mb-8 xl:mb-0">{!! $schedule->content !!}</p>
+        </div>
       </div>
       <div class="xl:w-1/2">
       {!! do_shortcode('[ninja_form id=2]') !!}
       </div>
     </div>
   </div>
+
+
   <div class="lg:flex text-center text-primary mb-16">
     <div class="lg:w-1/2" style="background-image: url('{!! $location->bkg !!}')">
       <div class="h-full bg-ae-green-bg">
-      <div class="w-full p-16  ">
-        <div class="border border-quarternary text-white p-20">
-        <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $location->heading }}</h2>
-        <p class="text-md md:text-2xl mb-8 leading-normal">{{ $property_details->address }} <br> {{ $property_details->city }}, {{ $property_details->state }} {{ $property_details->zip }}</p>
-        <a href="{{ $location->link }}">
-          <button class="directionsModal_open py-3 px-8 border border-white uppercase text-lg text-white">Directions</button>
-        </a>
-      </div>
+        <div class="w-full p-16  ">
+          <div class="border border-quarternary text-white p-20">
+          <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $location->heading }}</h2>
+          <p class="text-md md:text-2xl mb-8 leading-normal">{{ $property_details->address }} <br> {{ $property_details->city }}, {{ $property_details->state }} {{ $property_details->zip }}</p>
+          <a href="{{ $location->link }}">
+            <button class="directionsModal_open py-3 px-8 border border-white uppercase text-lg text-white">Directions</button>
+          </a>
+        </div>
       </div>  
-      </div>
     </div>
+  </div>
 
     <div id="directionsModal" class="siteModal teamModal h-full w-full text-white overflow-y-scroll">
         <a href="#" class="directionsModal_close siteModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-16 cursor-pointer"></a>
