@@ -148,8 +148,20 @@
     <div class="xl:flex w-full px-4 md:px-16 py-8 lg:py-16 border border-quarternary">
       <div class="xl:w-1/2 text-center">
         <div class="flex content-center flex-wrap h-full">
-          <h2 class="block uppercase text-lg lg:text-3xl mb-8 mx-auto">{{ $schedule->heading }}</h2>  
-          <p class="w-2/3 mx-auto text-lg lg:text-2xl leading-normal mb-8 xl:mb-0">{!! $schedule->content !!}</p>
+          <h2 class="w-full uppercase text-lg lg:text-3xl mb-8 mx-auto">
+            @if ( $schedule->heading )
+              {{ $schedule->heading }}
+            @else
+              Schedule a showing
+            @endif
+            </h2>  
+          <p class="w-2/3 mx-auto text-lg lg:text-2xl leading-normal mb-8 xl:mb-0">
+            @if ( $schedule->content )
+            {!! $schedule->content !!}
+            @else
+            Please use this form to schedule a showing. Include a specific date and time that you would like to see this property.
+            @endif
+            </p>
         </div>
       </div>
       <div class="xl:w-1/2">
