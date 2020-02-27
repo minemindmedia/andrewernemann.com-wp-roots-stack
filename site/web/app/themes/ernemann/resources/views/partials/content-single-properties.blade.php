@@ -76,9 +76,11 @@
     </div>
   </header>
   
+  @if ( $youtube->id )
   <div class="w-full">
     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ $youtube->id }}' frameborder='0' allowfullscreen></iframe></div>
   </div>
+  @endif
   
   <div class="text-white uppercase no-underline mt-0 py-0 w-screen h-full bg-cover bg-bottom" style="background-image: url('{!! $documents_background->bkg !!}')">
     <div class="h-full bg-ae-green-bg">
@@ -123,6 +125,13 @@
       </div>
     </div>
   </div>
+
+  @if ( $tour->embed )
+  <div class="w-full">
+    {!! $tour->embed !!}
+  </div>
+  @endif
+
   <div class="lg:flex p-8 md:p-16 text-center text-primary bg-grey-lightest">
     <div class="w-full px-4 md:px-8 py-8 lg:py-32 border border-quarternary border-white">
       <div class="w-4/5 mx-auto">

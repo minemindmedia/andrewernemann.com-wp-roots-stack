@@ -91,5 +91,13 @@ class SingleProperties extends Controller
         ];
     }
 
+    public function tour()
+    {
+        $field = get_field('3d_tour');
+        return (object) [
+            'embed'     => $field['3d_tour_embed_code'] ?? null,
+        ];
+    }
+
 
 }
