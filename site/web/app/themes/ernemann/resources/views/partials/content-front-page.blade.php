@@ -1,8 +1,8 @@
 <!-- 50vh section -->
 
-<div class="h-screen">
-  <div class="flex h-screen-50 p-16">
-    <div class="flex flex-1 mr-8 justify-center text-center text-primary border border-quaternary">
+<div class="xl:h-screen">
+  <div class="xl:flex xl:h-screen-50 p-8 xl:p-16">
+    <div class="flex flex-1 mr-0 xl:mr-8 mb-8 xl:mb-0 p-8 xl:p-0 justify-center text-center text-primary border border-quaternary">
       <div class="self-center w-5/6">
         <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingOne }}</h2>
         <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingOne !!}</p>
@@ -11,7 +11,7 @@
         </a>
       </div>
     </div>
-    <div class="flex flex-1 ml-8 justify-center text-center text-primary border border-quaternary">
+    <div class="flex flex-1 ml-0 xl:ml-8 p-8 xl:p-0 justify-center text-center text-primary border border-quaternary">
       <div class="self-center w-5/6">
         <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingTwo }}</h2>
         <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingTwo !!}</p>
@@ -21,9 +21,9 @@
       </div>
     </div>
   </div>
-  <div class="flex h-screen-50 justify-center pb-16">
+  <div class="xl:flex xl:h-screen-50 justify-center pb-8 xl:pb-16">
     
-      <video controls loop poster="{{ $videosection->poster }}">
+      <video controls loop poster="{{ $videosection->poster }}" class="block w-full xl:w-1/2 mx-auto">
         <source src="{{ $videosection->mp4 }}" type="video/mp4">
         <source src="{{ $videosection->webm }}" type="video/webm">
         Your browser does not support HTML5 video.
