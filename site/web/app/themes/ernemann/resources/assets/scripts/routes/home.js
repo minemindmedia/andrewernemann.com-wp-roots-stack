@@ -1,5 +1,4 @@
 import jQueryPopupOverlay from 'jquery-popup-overlay';
-import videojs from 'video.js';
 export default {
   init() {
     // JavaScript to be fired on the home page
@@ -52,15 +51,22 @@ export default {
       arrows: false,
     });
 
-    var video = videojs('home-player');
-    
-      video.on('pause', function() {
-        this.bigPlayButton.show();
-      
-        video.one('play', function() {
-          this.bigPlayButton.hide();
-      });
-    });
+    var _video = document.querySelector('video');
+      function isScrolledIntoView( element ) {
+          var elementTop    = element.getBoundingClientRect().top,
+              elementBottom = element.getBoundingClientRect().bottom;
+
+          return elementTop >= 0 && elementBottom <= window.innerHeight;
+      }
+      window.addEventListener('scroll', function(){
+        if (isScrolledIntoView(_video)) {
+          _video.play();
+        }
+        else {
+          _video.pause()
+        }
+      })
+
     return jQueryPopupOverlay;
   },
   finalize() {

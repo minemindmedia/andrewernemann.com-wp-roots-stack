@@ -1,34 +1,41 @@
-<div class="lg:flex p-8 md:p-16 text-center text-grey">
-  <div class="w-full md:mr-8 mb-8 lg:mb-0 px-4 lg:px-8 py-8 lg:py-32  border border-quaternary">
-    <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingOne }}</h2>
-    <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingOne !!}</p>
-    <a href="{{ $towupsectionone->buttonURLOne }}">
-      <button class="py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectionone->buttonTextOne }}</button>
-    </a>
+<!-- 50vh section -->
+
+<div class="h-screen">
+  <div class="flex h-screen-50 p-16">
+    <div class="flex flex-1 mr-8 justify-center text-center text-primary border border-quaternary">
+      <div class="self-center w-5/6">
+        <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingOne }}</h2>
+        <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingOne !!}</p>
+        <a href="{{ $towupsectionone->buttonURLOne }}">
+          <button class="py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectionone->buttonTextOne }}</button>
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-1 ml-8 justify-center text-center text-primary border border-quaternary">
+      <div class="self-center w-5/6">
+        <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingTwo }}</h2>
+        <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingTwo !!}</p>
+        <a href="{{ $towupsectionone->buttonURLTwo }}">
+          <button class="py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectionone->buttonTextTwo }}</button>
+        </a>
+      </div>
+    </div>
   </div>
-  <div class="w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-32 border border-quaternary">
-    <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingTwo }}</h2>
-    <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingTwo !!}</p>
-    <a href="{{ $towupsectionone->buttonURLTwo }}">
-      <button class="py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectionone->buttonTextTwo }}</button>
-    </a>
+  <div class="flex h-screen-50 justify-center pb-16">
+    
+      <video controls loop poster="{{ $videosection->poster }}">
+        <source src="{{ $videosection->mp4 }}" type="video/mp4">
+        <source src="{{ $videosection->webm }}" type="video/webm">
+        Your browser does not support HTML5 video.
+      </video>
+    
   </div>
 </div>
 
-<div class="md:w-1/3 lg:w-2/5 mx-auto mb-16 home-video">
-  <video id="home-player"
-    class="video-js vjs-default-skin vjs-big-play-centered"
-    controls
-    preload="auto"
-    width="640"
-    height="264"
-    autoplay="true"
-    poster="{{ $videosection->poster }}"
-    data-setup='{"fluid": true}'>
-    <source src="{{ $videosection->mp4 }}" type='video/mp4' />
-    <source src="{{ $videosection->webm }}" type='video/webm' />
-  </video>
-</div>
+
+<!-- end 50vh section -->
+
+
 
 <div class="text-white mt-0 py-0 w-screen h-full bg-cover" style="background-image: url('{!! $oneupsection->background !!}')">
   <div class="h-full bg-ae-green-bg">

@@ -1,14 +1,13 @@
 @include('partials.header-nav')
-<div class="relative">
   @if (is_singular('properties'))
   @include('partials.header-single-properties')
   @else
   @if (is_archive())
-  <img class="lozad object-cover w-full" data-src="{!! $headerhero_options->background !!}">
+  <div class="text-white mt-0 py-0 w-full bg-cover h-screen" style="background-image:url('{!! $headerhero_options->background !!}')">
   @else
-    <img class="lozad object-cover w-full" data-src="{!! $headerhero->background !!}">
+  <div class="text-white mt-0 py-0 w-full bg-cover h-screen" style="background-image:url('{!! $headerhero->background !!}')">
   @endif
-  <div class="absolute bg-ae-green-bg" style="top:0; right:0; left:0; bottom:2px;">
+  <div class="h-screen bg-ae-green-bg">
     <div class="flex content-center flex-wrap justify-center text-white text-center h-full">
       @if(is_front_page())
         <div class="block wx-auto border border-white">
@@ -38,4 +37,3 @@
     </div>
   </div>
   @endif
-</div>
