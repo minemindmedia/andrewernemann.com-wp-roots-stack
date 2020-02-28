@@ -7,6 +7,7 @@ export default {
       arrows: true,
       dots: false,
       useCSS: false,
+      fade: true,
     });
     $('.single-gallery_two').slick({
       arrows: false,
@@ -14,6 +15,7 @@ export default {
       infinite: true,
       autoplaySpeed: 2000,
       pauseOnHover: false,
+      fade: true,
     });
     $('.buyModal').popup({
         transition: '0.2s',
