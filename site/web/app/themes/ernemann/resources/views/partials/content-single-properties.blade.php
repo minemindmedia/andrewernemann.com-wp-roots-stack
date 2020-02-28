@@ -183,8 +183,8 @@
   <div class="lg:flex text-center text-primary mb-16">
     <div class="lg:w-1/2" style="background-image: url('{!! $location->bkg !!}')">
       <div class="h-full bg-ae-green-bg">
-        <div class="w-full p-16  ">
-          <div class="border border-quarternary text-white p-20">
+        <div class="w-full p-8 lg:p-16  ">
+          <div class="border border-quarternary text-white p-8 lg:p-20">
           <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $location->heading }}</h2>
           <p class="text-md md:text-2xl mb-8 leading-normal">{{ $property_details->address }} <br> {{ $property_details->city }}, {{ $property_details->state }} {{ $property_details->zip }}</p>
           <a href="{{ $location->link }}">
