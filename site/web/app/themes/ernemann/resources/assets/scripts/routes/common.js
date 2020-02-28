@@ -5,10 +5,10 @@ export default {
     // JavaScript to be fired on all pages
     $(window).on('scroll', function() {
       if($(window).scrollTop() > 50) {
-          $('.header').addClass('active');
+          $('.siteheader').addClass('active');
       } else {
           //remove the background property so it comes transparent again (defined in your css)
-         $('.header').removeClass('active');
+         $('.siteheader').removeClass('active');
       }
     });
     const observer = lozad();

@@ -1,4 +1,4 @@
-<nav class="header fixed w-full z-50 md:pt-10">
+<nav class="siteheader fixed w-full z-50 md:pt-10">
   <div class="flex">
     <div class="w-1/3 px-4 py-1 m-2 md:pl-20">
       @if(is_front_page())
@@ -44,7 +44,7 @@
 
 <div id="navModal" class="siteModal h-full w-full text-white overflow-y-scroll">
   <div>
-    <div class="header h-10 mr-10 ml-10 mt-10">
+    <div class="h-10 mr-10 ml-10 mt-10">
         <img data-src="{{ $header->logo }}" class="lozad block w-32 mr-auto float-left">
         <a href="#" class="navModal_close siteModalClose"><img data-src="{{ $header->close }}" class="lozad block w-16 mr-auto float-right cursor-pointer"></a>
     </div>
