@@ -10,16 +10,16 @@
 </div>
 <div class="flex">
     <div class="w-full lg:w-1/2 mx-auto approach-video">
-        <video id="video-player-approach"
-        class="video-js vjs-default-skin vjs-big-play-centered" 
-        controls
+        <video id="vid" class="vjs-tech" style="width:100%; height: auto;"
         preload="auto"
-        width="640"
-        height="264"
-        poster="{{ $video->poster }}"
-        data-setup='{"fluid": true}'>
-        <source src="{{ $video->mp4 }}" type='video/mp4' />
-        <source src="{{ $video->webm }}" type='video/webm' />
+        autoplay 
+        mute
+        loop
+        autobuffer
+        controls
+        poster="{{ $video->poster }}" tabindex="-1" src="{{ $video->mp4 }}">
+        <source src="{{ $video->mp4 }}" type="video/mp4">
+        <source src="{{ $video->webm }}" type="video/webm">
         </video>
     </div>
 </div>
