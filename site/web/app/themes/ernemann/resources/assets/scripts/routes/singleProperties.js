@@ -1,22 +1,28 @@
 /* eslint-disable */
-import jQueryPopupOverlay from 'jquery-popup-overlay'
+import jQueryPopupOverlay from 'jquery-popup-overlay';
+import Siema from 'siema';
 export default {
   init() {
     // JavaScript to be fired on the about us page
-    $('.single-gallery').slick({
-      arrows: true,
-      dots: false,
-      useCSS: false,
-      fade: true,
+
+    const mySiema = new Siema({
+        selector: '.sp-gallery',
+        duration: 200,
+        easing: 'ease-out',
+        perPage: 1,
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: false,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
     });
-    $('.single-gallery_two').slick({
-      arrows: false,
-      autoplay: true,
-      infinite: true,
-      autoplaySpeed: 2000,
-      pauseOnHover: false,
-      fade: true,
-    });
+    document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+    document.querySelector('.next').addEventListener('click', () => mySiema.next());
+
+
     $('.buyModal').popup({
         transition: '0.2s',
         scrolllock: true,
@@ -27,11 +33,13 @@ export default {
       });
     return jQueryPopupOverlay;
     
+    
 
   },
 
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
+
     (function($) {
         function new_map( $el ) {
             var $markers = $el.find('.marker');

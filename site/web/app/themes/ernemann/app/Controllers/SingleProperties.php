@@ -11,6 +11,10 @@ class SingleProperties extends Controller
         return get_field( 'header_images' );
     }
 
+    public function galleryPoster() {
+        return get_field( 'header_images_poster' );
+    }
+
     public function propertyDetails()
     {
         $field = get_field('property_details');
