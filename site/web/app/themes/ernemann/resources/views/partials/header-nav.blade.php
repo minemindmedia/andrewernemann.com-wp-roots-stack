@@ -67,3 +67,13 @@
     </div>
   </div>
 </div>
+
+<div id="marketModal" class="siteModal marketModal h-full w-full text-white overflow-y-scroll">
+  <a href="#" class="marketModal_close siteModalClose"><img data-src="{{ $header->close }}" class="lozad block w-16 cursor-pointer"></a>
+  <div class="w-2/5 mx-auto mt-48 mb-16 ">
+    <div class="px-24 py-16 border border-tertiary uppercase font-normal">
+      <p class="text-center text-2xl font-bold mb-12">Sign up to receive the market report</p>
+      {!! do_shortcode('[ninja_form id=4]') !!}
+    </div>
+  </div>
+</div>

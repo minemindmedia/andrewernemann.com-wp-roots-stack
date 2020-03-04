@@ -22,6 +22,10 @@ export default {
       transition: '0.2s',
       scrolllock: true,
     });
+    $('#marketModal').popup({
+      transition: '0.2s',
+      scrolllock: true,
+    });
     $('#phoneTooltip').popup({
       type: 'tooltip',
       offsettop: 0,
