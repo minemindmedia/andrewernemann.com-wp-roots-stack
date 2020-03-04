@@ -1,4 +1,4 @@
-<header class="bg-cover bg-center h-screen" style="background-image: url({!! $headerhero->background !!})">
+<header class="bg-cover bg-center h-screen lozad" data-background-image="{!! $headerhero->background !!}">
   <div class="h-screen bg-ae-green-bg">
     <div class="overflow-hidden border-t border-l border-r border-gray-400 p-4 pt-8">
       <div class="flex">

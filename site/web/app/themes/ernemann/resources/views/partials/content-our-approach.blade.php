@@ -79,7 +79,7 @@
         </div>
     </div>
 </div>
-<div class="text-white mt-0 py-0 w-screen h-full bg-cover" style="background-image: url('{!! $covered->background !!}')">
+<div class="text-white mt-0 py-0 w-screen h-full bg-cover lozad" data-background-image="{!! $covered->background !!}">
     <div class="h-full bg-ae-green-bg">
         <div class="flex">
             <div class="relative m-8 lg:m-16 p-4 lg:p-16 text-center">

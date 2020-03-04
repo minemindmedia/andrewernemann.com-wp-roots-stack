@@ -23,7 +23,7 @@
   </video>
 </div>
 
-<div class="text-white mt-0 py-0 w-screen h-full bg-cover" style="background-image: url('{!! $oneupsection->background !!}')">
+<div class="text-white mt-0 py-0 w-screen h-full bg-cover lozad" data-background-image="{!! $oneupsection->background !!}">
   <div class="h-full bg-ae-green-bg">
     <div class="flex">
     <div class="m-8 md:m-16 p-8 md:p-20 border border-white text-center">
@@ -106,7 +106,7 @@
     </div>
   </div>
 </div> 
-<div class="text-white mt-0 py-0 w-screen h-full bg-cover bg-bottom" style="background-image: url('{!! $oneupsectiontwo->background !!}')">
+<div class="text-white mt-0 py-0 w-screen h-full bg-cover bg-bottom lozad" data-background-image="{!! $oneupsectiontwo->background !!}">
   <div class="h-full bg-ae-green-bg">
     <div class="flex">
       <div class="m-8 md:m-16 p-8 md:p-16 lg:py-32 border border-white text-center">

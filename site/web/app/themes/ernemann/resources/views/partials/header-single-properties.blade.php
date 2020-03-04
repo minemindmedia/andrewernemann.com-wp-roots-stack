@@ -1,6 +1,6 @@
 @if ( $gallery )
 
-<div class="single-gallery relative" style="background-image: url(' {{ $gallery_poster }} ')">
+<div class="single-gallery relative lozad" data-background-image="{{ $gallery_poster }}">
     <div class="overlay">
         <div class="sp-gallery">
             @foreach( $gallery as $image )

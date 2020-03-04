@@ -77,7 +77,7 @@
 </div>
 @endif
 
-<div class="text-white mt-0 py-0 w-screen h-full bg-cover bg-bottom" style="background-image: url('{!! $better_together->background !!}')">
+<div class="text-white mt-0 py-0 w-screen h-full bg-cover bg-bottom lozad" data-background-image="{!! $better_together->background !!}">
     <div class="h-full bg-ae-green-bg">
       <div class="flex">
           <div class="m-8 lg:w-1/2 lg:mx-auto xl:my-64">

@@ -3,9 +3,9 @@
   @include('partials.header-single-properties')
   @else
   @if (is_archive())
-  <div class="text-white mt-0 py-0 w-full bg-cover h-screen" style="background-image:url('{!! $headerhero_options->background !!}')">
+  <div class="text-white mt-0 py-0 w-full bg-cover h-screen lozad" data-background-image="{!! $headerhero_options->background !!}">
   @else
-  <div class="text-white mt-0 py-0 w-full bg-cover h-screen" style="background-image:url('{!! $headerhero->background !!}')">
+  <div class="text-white mt-0 py-0 w-full bg-cover h-screen lozad" data-background-image="{!! $headerhero->background !!}">
   @endif
   <div class="h-screen bg-ae-green-bg">
     <div class="flex content-center flex-wrap justify-center text-white text-center h-full">

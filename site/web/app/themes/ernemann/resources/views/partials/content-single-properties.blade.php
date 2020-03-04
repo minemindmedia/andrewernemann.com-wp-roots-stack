@@ -82,7 +82,7 @@
   </div>
   @endif
   
-  <div class="text-white uppercase no-underline mt-0 py-0 w-screen h-full bg-cover bg-bottom" style="background-image: url('{!! $documents_background->bkg !!}')">
+  <div class="text-white uppercase no-underline mt-0 py-0 w-screen h-full bg-cover bg-bottom lozad" data-background-image="{!! $documents_background->bkg !!}">
     <div class="h-full bg-ae-green-bg">
       <div class="flex">
         <div class="w-full m-8 md:m-16 p-8 md:p-16 border border-white text-center">
@@ -181,7 +181,7 @@
 
 
   <div class="lg:flex text-center text-primary mb-16">
-    <div class="lg:w-1/2" style="background-image: url('{!! $location->bkg !!}')">
+    <div class="lg:w-1/2 lozad" data-background-image={!! $location->bkg !!}">
       <div class="h-full bg-ae-green-bg">
         <div class="w-full p-8 lg:p-16  ">
           <div class="border border-quarternary text-white p-8 lg:p-20">
