@@ -77,8 +77,12 @@
       background: url(../images/gallery-next.svg);
       background-repeat: no-repeat;
       top: -57px;
-      right: 64px;
+      right: 7px;
       position: absolute;
+
+      @media (min-width: 1024px) {
+        right: 64px;
+      }
     }
   }
 
@@ -94,8 +98,12 @@
       background: url(../images/gallery-prev.svg);
       background-repeat: no-repeat;
       top: -57px;
-      left: 64px;
+      left: 7px;
       position: absolute;
+
+      @media (min-width: 1024px) {
+        left: 64px;
+      }
     }
   }
 
