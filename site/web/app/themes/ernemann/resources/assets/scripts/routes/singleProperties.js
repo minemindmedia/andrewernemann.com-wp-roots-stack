@@ -5,22 +5,34 @@ export default {
   init() {
     // JavaScript to be fired on the about us page
 
-    const mySiema = new Siema({
-        selector: '.sp-gallery',
-        duration: 200,
-        easing: 'ease-out',
-        perPage: 1,
-        startIndex: 0,
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: false,
-        rtl: false,
-        onInit: () => {},
-        onChange: () => {},
-    });
-    document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-    document.querySelector('.next').addEventListener('click', () => mySiema.next());
+    $('.center').slick({
+        centerMode: true,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        variableWidth: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                adaptiveHeight: true,
+                variableWidth: true,
+                slidesToShow: 1,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                adaptiveHeight: true,
+                variableWidth: true,
+                slidesToShow: 1,
+              }
+            }
+          ]
+      });
 
 
     $('.buyModal').popup({

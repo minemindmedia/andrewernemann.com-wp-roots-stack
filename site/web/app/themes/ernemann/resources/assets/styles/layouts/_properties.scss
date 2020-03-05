@@ -57,6 +57,19 @@
   }
 }
 
+.slick-slider {
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-track {
+    img {
+      height: 100vh;
+    }
+  }
+}
+
 .acf-map {
   display: block;
   width: 100%;
@@ -67,9 +80,4 @@
   @media (min-width: 1024px) {
     height: 100%;
   }
-}
-
-// Fixes potential theme css conflict.
-.acf-map img {
-  max-width: inherit !important;
 }

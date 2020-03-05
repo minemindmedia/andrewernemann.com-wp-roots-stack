@@ -1,17 +1,16 @@
 @if ( $gallery )
 
-<div class="single-gallery relative lozad" data-background-image="{{ $gallery_poster }}">
-    <div class="overlay">
-        <div class="sp-gallery">
+<div class="relative">
+    
+        <div class="center">
             @foreach( $gallery as $image )
-            <img data-src="{{ $image['url'] }}" alt="{{ $image['alt'] }}" class="lozad block max-h-screen w-auto mx-auto"/>
+            <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}"/>
             @endforeach
+            <div class="header-footer w-full h-16 text-white z-50">
+            </div>
         </div>
-        <div class="header-footer w-full h-16 text-white">
-            <button class="prev float-left h-12 w-12 mt-2 ml-2 lg:ml-16"><img src="@asset('images/gallery-prev.svg')"></button>
-            <button class="next float-right h-12 w-12 mt-2 mr-2 lg:mr-16"><img src="@asset('images/gallery-next.svg')"></button>
-        </div>
-    </div>
+
+    
 </div>
 
 @endif
