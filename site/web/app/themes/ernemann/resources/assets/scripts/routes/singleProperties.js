@@ -8,30 +8,7 @@ export default {
     $('.center').slick({
         centerMode: true,
         slidesToShow: 1,
-        adaptiveHeight: true,
         variableWidth: true,
-        responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                adaptiveHeight: true,
-                variableWidth: true,
-                slidesToShow: 1,
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                adaptiveHeight: true,
-                variableWidth: true,
-                slidesToShow: 1,
-              }
-            }
-          ]
       });
 
 

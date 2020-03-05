@@ -2,7 +2,7 @@
 
 <div class="relative">
     
-        <div class="center">
+        <div class="center bg-black">
             @foreach( $gallery as $image )
             <img src="{{ $image['url'] }}" alt="{{ $image['alt'] }}"/>
             @endforeach
