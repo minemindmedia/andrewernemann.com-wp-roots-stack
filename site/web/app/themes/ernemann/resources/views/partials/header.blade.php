@@ -27,9 +27,11 @@
       <h2 class="w-auto font-normal text-lg md:text-4xl text-center border border-white px-2 lg:px-6 py-2 lg:py-12 ">
           {!! $headerhero->heading !!}
         </h2>
+        @if ( $headerhero->subheading )
         <div class="w-full">
         <p class="w-1/2 mx-auto text-sm sm:text-xl md:text-3xl mt-4 md:mt-8 lg:mt-24">{!! $headerhero->subheading !!}</p>
         </div>
+        @endif
       @endif
     </div>
     <div class="header-footer w-full h-8 md:h-16 text-white">
