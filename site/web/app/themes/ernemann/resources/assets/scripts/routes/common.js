@@ -3,9 +3,10 @@ import lozad from 'lozad';
 export default {
   init() {
     // JavaScript to be fired on all pages
-    
+    var $win = $(window);
+    var winH = $win.height();
     $(window).on('scroll', function() {
-      if($(window).scrollTop() > 50) {
+      if($(window).scrollTop() > winH) {
           $('.siteheader').addClass('active');
       } else {
           //remove the background property so it comes transparent again (defined in your css)
