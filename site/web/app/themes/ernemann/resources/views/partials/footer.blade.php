@@ -15,10 +15,11 @@
         <p class="text-3xl mb-6">{{ $contact_details->phone }}</p>
         <a href="" class="contactModal_open block text-white uppercase no-underline text-3xl mb-6">Send an email</a>
         <p class="text-xl mb-6">{!! $contact_details->address !!}</p>
-        <p class="text-lg">{!! $contact_details->copyright !!}</p>
+        <p class="text-lg mb-6">{!! $contact_details->copyright !!}</p>
+        <a href="/privacy-policy" class="text-md text-white">Privacy Policy</a>
       </div>
     </div>
-    <div class="mt-16 p-8 lg:p-0 lg:mx-48 ">
+    <div class="mt-32 p-8 lg:p-0 lg:mx-48 ">
       <p class="text-white opacity-25 text-md lg:text-lg">{{ $fine_print->content }}</p>
     </div>
   </div>
