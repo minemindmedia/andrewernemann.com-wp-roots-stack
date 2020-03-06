@@ -1,4 +1,3 @@
-@include('partials.buy-now-modal')
 <article @php post_class() @endphp>
   <header class="p-8 md:p-16 text-center text-primary">
     <div class="w-full lg:mb-0 px-4 lg:px-8 py-8 lg:py-32  border border-quarternary">
@@ -142,8 +141,8 @@
   </div>
   <div id="buyModal" class="siteModal buyModal h-full w-full text-white overflow-y-scroll">
         <a href="#" class="buyModal_close siteModalClose"><img data-src="{{ $header->close }}" class="lozad block w-16 cursor-pointer"></a>
-        <div class="w-2/5 mx-auto mt-48 mb-16 ">
-          <div class="px-24 py-16 border border-tertiary uppercase font-normal">
+        <div class="w-4/5 lg:w-2/5 mx-auto mt-32 lg:mt-48 mb-16 ">
+          <div class="px-8 lg:px-24 py-8 lg:py-16 border border-tertiary uppercase font-normal">
             <p class="text-center text-2xl font-bold mb-12">Buy it now!</p>
             {!! do_shortcode('[ninja_form id=3]') !!}
           </div>

@@ -42,7 +42,7 @@
 
 
 
-<div id="navModal" class="siteModal h-full w-full text-white overflow-y-scroll">
+<div id="navModal" class="siteModal h-full w-full text-white overflow-y-scroll z-50">
   <div>
     <div class="h-10 mr-10 ml-10 mt-10">
         <img data-src="{{ $header->logo }}" class="lozad block w-32 mr-auto float-left">
@@ -60,8 +60,8 @@
 
 <div id="contactModal" class="siteModal contactModal h-full w-full text-white overflow-y-scroll">
   <a href="#" class="contactModal_close siteModalClose"><img data-src="{{ $header->close }}" class="lozad block w-16 cursor-pointer"></a>
-  <div class="w-2/5 mx-auto mt-48 mb-16 ">
-    <div class="px-24 py-16 border border-tertiary uppercase font-normal">
+  <div class="w-4/5 lg:w-2/5 mx-auto mt-32 lg:mt-48 mb-16 ">
+    <div class="px-8 lg:px-24 py-8 lg:py-16 border border-tertiary uppercase font-normal">
       <p class="text-center text-2xl font-bold mb-12">We look forward to hearing from you</p>
       {!! do_shortcode('[ninja_form id=5]') !!}
     </div>
@@ -70,8 +70,8 @@
 
 <div id="marketModal" class="siteModal marketModal h-full w-full text-white overflow-y-scroll">
   <a href="#" class="marketModal_close siteModalClose"><img data-src="{{ $header->close }}" class="lozad block w-16 cursor-pointer"></a>
-  <div class="w-2/5 mx-auto mt-48 mb-16 ">
-    <div class="px-24 py-16 border border-tertiary uppercase font-normal">
+  <div class="w-4/5 lg:w-2/5 mx-auto mt-32 lg:mt-48 mb-16 ">
+    <div class="px-8 lg:px-24 py-8 lg:py-16 border border-tertiary uppercase font-normal">
       <p class="text-center text-2xl font-bold mb-12">Sign up to receive the market report</p>
       {!! do_shortcode('[ninja_form id=4]') !!}
     </div>
