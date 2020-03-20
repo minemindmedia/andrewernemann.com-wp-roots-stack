@@ -2,6 +2,7 @@
   @if (is_singular('properties'))
   @include('partials.header-single-properties')
   @else
+
   @if (is_archive())
   <div class="text-white mt-0 py-0 w-full bg-cover h-screen lozad" data-background-image="{!! $headerhero_options->background !!}">
   @else

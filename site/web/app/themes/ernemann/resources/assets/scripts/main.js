@@ -13,6 +13,7 @@ import aboutUs from './routes/about';
 import singleProperties from './routes/singleProperties';
 import ourApproach from './routes/ourApproach';
 import meetTheTeam from './routes/meetTheTeam';
+import privacyPolicy from './routes/privacyPolicy';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -28,6 +29,8 @@ const routes = new Router({
   ourApproach,
   // Meet The Team
   meetTheTeam,
+  // Privacy Policy
+  privacyPolicy,
 });
 
 // Load Events

@@ -12,10 +12,12 @@
     margin-bottom: 0;
     background-color: transparent;
     font-size: 18px;
+    color: #fff;
 
     @media (min-width: 1024px) {
       margin-bottom: 0.75rem;
       font-size: 22px;
+      color: red;
     }
 
     &::placeholder {
@@ -32,7 +34,7 @@
   }
 
   input[type="button"] {
-    border: 1px solid #9bafb9;
+    border: 1px solid #fff;
     background-color: transparent;
     color: black;
     text-transform: uppercase;
@@ -81,13 +83,15 @@
   input[type="text"],
   input[type="email"],
   input[type="tel"],
+  #nf-field-31,
   textarea {
     padding: 0 2rem;
     margin-bottom: 0;
     background-color: transparent;
     font-size: 18px;
     height: 45px;
-    border: 1px solid #9bafb9;
+    border: 1px solid #fff;
+    color: #fff;
 
     @media (min-width: 1024px) {
       margin-bottom: 0.75rem;
@@ -103,12 +107,23 @@
     }
   }
 
+  select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    background-image: url("/app/uploads/2020/01/header-footer-arrow.svg");
+    background-position: 97% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
+    right: 20px;
+  }
+
   input[aria-invalid="false"] {
-    border-color: #9bafb9 !important;
+    border-color: #fff !important;
   }
 
   .nf-pass.field-wrap .nf-field-element::after {
-    color: #9bafb9;
+    color: #fff;
   }
 
   input[aria-invalid="true"] {
@@ -154,9 +169,9 @@
 
   input[type="button"] {
     display: block;
-    border: 1px solid #9bafb9;
+    border: 1px solid #fff;
     background-color: transparent;
-    color: #9bafb9;
+    color: #fff;
     text-transform: uppercase;
     padding: 0 1.5rem;
     height: 40px;

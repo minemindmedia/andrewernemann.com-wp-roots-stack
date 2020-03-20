@@ -1,4 +1,4 @@
-<nav class="siteheader fixed w-full z-50 md:pt-10">
+<nav class="siteheader_pp fixed w-full z-50 md:pt-10">
   <div class="flex">
     <div class="w-1/3 px-4 py-1 m-2 md:pl-20">
       @if(is_front_page())

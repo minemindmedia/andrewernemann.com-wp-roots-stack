@@ -1,14 +1,14 @@
 <div class="lg:flex p-8 md:p-16 text-center text-grey">
   <div class="w-full md:mr-8 mb-8 lg:mb-0 px-4 lg:px-8 py-8 lg:py-32  border border-quaternary">
     <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingOne }}</h2>
-    <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingOne !!}</p>
+    <p class="text-md md:text-2xl mb-8 leading-normal">{!! $towupsectionone->subheadingOne !!}</p>
     <a href="{{ $towupsectionone->buttonURLOne }}">
       <button class="py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectionone->buttonTextOne }}</button>
     </a>
   </div>
   <div class="w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-32 border border-quaternary">
     <h2 class="uppercase text-xl md:text-3xl mb-6">{{ $towupsectionone->headingTwo }}</h2>
-    <p class="text-md md:text-2xl mb-8">{!! $towupsectionone->subheadingTwo !!}</p>
+    <p class="text-md md:text-2xl mb-8 leading-normal">{!! $towupsectionone->subheadingTwo !!}</p>
     <a href="{{ $towupsectionone->buttonURLTwo }}">
       <button class="py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $towupsectionone->buttonTextTwo }}</button>
     </a>
@@ -28,7 +28,7 @@
     <div class="flex">
     <div class="m-8 md:m-16 p-8 md:p-20 border border-white text-center">
       <h2 class="uppercase text-white text-3xl mb-6">{{ $oneupsection->heading }}</h2>
-      <p class="text-md md:text-2xl mb-8 text-white">{{ $oneupsection->content }}</p>
+      <p class="text-md md:text-2xl mb-8 text-white leading-normal">{{ $oneupsection->content }}</p>
       <div class="pt-8 px-4"><img data-src="{{ $oneupsection->logo['url'] }}" alt="{{ $oneupsection->logo['alt'] }}" class="lozad h-16"></div>
     </div>
   </div>
@@ -111,7 +111,7 @@
     <div class="flex">
       <div class="m-8 md:m-16 p-8 md:p-16 lg:py-32 border border-white text-center">
         <h2 class="uppercase text-3xl mb-6">{{ $oneupsectiontwo->heading }}</h2>
-        <p class="text-md md:text-2xl mb-8 lg:mx-64">{{ $oneupsectiontwo->content }}</p>
+        <p class="text-md md:text-2xl mb-8 lg:mx-64 leading-normal">{{ $oneupsectiontwo->content }}</p>
         <a href="{{ $oneupsectiontwo->buttonLink }}" class="inline-block mt-12">
         <button class="py-3 px-6 border border-white uppercase text-lg font-medium text-white tracking-wider">{{ $oneupsectiontwo->buttonText }}</button> 
         </a>
@@ -121,9 +121,9 @@
 </div>
 <div class="text-grey py-0 lg:w-1/2 lg:my-8 mx-auto">
   <div class="flex">
-    <div class="m-8 px-4 py-8 lg:py-24 border border-quaternary text-center">
+    <div class="m-8 px-8 lg:px-16 py-8 lg:py-24 border border-quaternary text-center">
       <h2 class="uppercase text-3xl mb-6">{{ $oneupsectionthree->heading }}</h2>
-      <p class="text-md md:text-2xl mb-8">{{ $oneupsectionthree->content }}</p>
+      <p class="text-md md:text-2xl mb-8 leading-normal">{{ $oneupsectionthree->content }}</p>
       <a href="{{ $oneupsectionthree->buttonLink }}">
       <button class="py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{{ $oneupsectionthree->buttonText }}</button> 
       </a>

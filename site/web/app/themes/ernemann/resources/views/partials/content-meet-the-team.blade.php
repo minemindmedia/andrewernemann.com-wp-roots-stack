@@ -17,9 +17,9 @@
     </div>
     <div id="andrewModal" class="siteModal teamModal h-full w-full text-white overflow-y-scroll">
         <div class="lg:w-3/4 mx-8 lg:mx-auto mt-8 lg:mt-0 mb-16 ">
-            <a href="#" class="andrewModal_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-8 float-right mr-4 cursor-pointer"></a>
+            <a href="#" class="andrewModal_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-16 float-right mr-4 cursor-pointer"></a>
             <div class="lg:flex text-2xl leading-normal text-primary">
-                <div class="flex-1 px-6 pt-12">
+                <div class="flex-1 px-6 pt-24">
                     <img data-src="{{ $meet_andrew->photo['url'] }}" alt="{{ $meet_andrew->photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8">
                     <h2 class="uppercase text-2xl mb-8">{{ $meet_andrew->title }}</h2>
                     {!! $meet_andrew->biography_one !!}
@@ -56,10 +56,10 @@
         </div>
         <div id="teamModal-{{ $k }}" class="teamModal h-full w-full text-primary overflow-y-scroll">
             <div class="lg:w-3/4 mx-8 lg:mx-auto mt-8 lg:mt-0 mb-16 ">
-                <a href="#" class="teamModal-{{ $k }}_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-8 float-right mr-4 cursor-pointer"></a>
+                <a href="#" class="teamModal-{{ $k }}_close teamModalClose"><img data-src="@asset('images/close-dark.svg')" class="lozad block w-16 mr-4 cursor-pointer"></a>
                 <div class="lg:flex md:text-2xl leading-normal">
                     <div class="flex-1 px-6 pt-6 lg:pt-12 pb-0">
-                        <img data-src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8 mt-2">
+                        <img data-src="{{ $photo['url'] }}" alt="{{ $photo['alt'] }}" class="lozad md:w-64 float-left mr-8 mb-8 mt-20">
                         <h2 class="uppercase text-2xl mb-8">{{ $title }}</h2>
                         {!! $biography_one !!}
                     </div>

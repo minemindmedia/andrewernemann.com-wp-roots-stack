@@ -76,7 +76,7 @@
   </header>
   
   @if ( $youtube->id )
-  <div class="w-full">
+  <div class="w-full mb-16">
     <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ $youtube->id }}' frameborder='0' allowfullscreen></iframe></div>
   </div>
   @endif
@@ -101,19 +101,19 @@
                 $other = get_sub_field('document_file');
               @endphp
               @if ($type == 'specifications')
-                <a href="{{ $specifications }}" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Specifications</a>
+                <a href="{{ $specifications }}" target="_blank" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Specifications</a>
               @elseif ($type == 'floor_plans')
-                <a href="{{ $floor_plans }}" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Floor Plans</a>
+                <a href="{{ $floor_plans }}" target="_blank" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Floor Plans</a>
               @elseif ($type == 'survey')
-                <a href="{{ $survey }}" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Survey</a>
+                <a href="{{ $survey }}" target="_blank" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Survey</a>
               @elseif ($type == 'land_use')
-                <a href="{{ $land_use }}" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Land Use </a>
+                <a href="{{ $land_use }}" target="_blank" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Land Use </a>
               @elseif ($type == 'gis_map')
-                <a href="{{ $gis_map }}" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">GIS Map</a>
+                <a href="{{ $gis_map }}" target="_blank" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">GIS Map</a>
               @elseif ($type == 'parcel_report')
-                <a href="{{ $parcel_report }}" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Parcel Report</a>
+                <a href="{{ $parcel_report }}" target="_blank" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">Parcel Report</a>
               @elseif ($type == 'other')  
-                <a href="{{ $other }}" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">{{ $document_title }}</a>
+                <a href="{{ $other }}" target="_blank" class="w-3/4 sm:w-1/2 lg:w-1/6 border border-white m-2 text-white p-4 no-underline font-medium tracking-wider">{{ $document_title }}</a>
               @endif
             @endwhile
             @else
@@ -126,7 +126,7 @@
   </div>
 
   @if ( $tour->embed )
-  <div class="w-full">
+  <div class="w-full mt-16">
     {!! $tour->embed !!}
   </div>
   @endif
