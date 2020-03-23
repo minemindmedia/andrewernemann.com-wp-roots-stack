@@ -30,9 +30,20 @@ export default {
     $('#phoneTooltip').popup({
       type: 'tooltip',
       offsettop: 0,
-      offsetleft: -125,
+      offsetleft: -150,
     });
+
+    $(document).ready(function() {
+      $('#showHidePhone').click(function() {
+        $('#phone').stop(false).toggle('slow');
+      });
+    });
+    
     return jQueryPopupOverlay;
+
+    
+
+    
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

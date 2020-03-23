@@ -27,21 +27,25 @@
           <img data-src="{{ $header->phone }}" class="lozad block w-6 md:w-8 mr-auto"></a>
           </i>
         @endif
-        <button class="hidden sm:hidden md:hidden lg:hidden xl:inline-block phoneTooltip_open float-right">
+        <button id="showHidePhone" class="hidden sm:hidden md:hidden lg:hidden xl:inline-block phoneTooltip_open phoneTooltip_close float-right">
         <i class="inline-block mr-4 md:mr-10 float-right"><img data-src="{{ $header->phone }}" class="lozad block w-6 md:w-8 mr-auto"></i>
       </button>
       
 
         
-        <section id="phoneTooltip">
+        <div id="phone" class="hidden lg:visible">
           <h2 class="text-white">{{ $header->phone_number }}</h2>
-        </section>
+        </div>
         
+
+       
 
       </div>
     </div>
   </div>
 </nav>
+
+
 
 
 
