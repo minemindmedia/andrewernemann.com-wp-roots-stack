@@ -21,7 +21,7 @@
           </a>
         </i> 
         
-        @if( !wp_is_mobile())
+        @if( wp_is_mobile())
         <i class="lg:inline-block xl:hidden mr-4 md:mr-10 float-right">
           <a href="tel:{{ $header->phone_number }}">
           <img data-src="{{ $header->phone }}" class="lozad block w-6 md:w-8 mr-auto"></a>
