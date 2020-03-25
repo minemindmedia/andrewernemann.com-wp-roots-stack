@@ -73,9 +73,7 @@
     visibility: collapse;
 
     &::after {
-      position: absolute;
-      top: 50%;
-      transform: translate(0%, -50%);
+      position: relative;
       right: -20px;
       visibility: visible;
       background-image: url("../images/next-arrow.svg");
@@ -85,7 +83,7 @@
       width: 20px;
       height: 20px;
       content: "";
-      bottom: 200px;
+      bottom: 100px;
 
       @media (min-width: 640px) {
         width: 40px;
@@ -120,9 +118,7 @@
     visibility: collapse;
 
     &::after {
-      position: absolute;
-      top: 50%;
-      transform: translate(0%, -50%);
+      position: relative;
       left: -20px;
       visibility: visible;
       background-image: url("../images/prev-arrow.svg");
@@ -132,7 +128,7 @@
       width: 20px;
       height: 20px;
       content: "";
-      bottom: 200px;
+      bottom: 100px;
 
       @media (min-width: 640px) {
         width: 40px;
