@@ -2,7 +2,7 @@
     <div class="flex">
         <div class="m-8 lg:m-16 p-8 md:p-16 border border-quaternary text-center text-primary">
             <h2 class="uppercase text-xl lg:text-3xl mb-6">{{ $reach->heading }}</h2>
-            <p class="lg:mx-48 text-md md:text-2xl mb-8 leading-normal">{{ $reach->content }}</p>
+            <p class="lg:mx-48 text-md md:text-2xl mb-8 lg:mx-64 leading-normal">{{ $reach->content }}</p>
         <div class="py-2 px-4 mb-8">
             <img data-src="{{ $reach->logo['url'] }}" alt="{{ $reach->logo['alt'] }}" class="lozad h-16">
         </div>

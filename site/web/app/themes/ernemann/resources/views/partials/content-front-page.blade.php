@@ -28,7 +28,7 @@
     <div class="flex">
     <div class="m-8 md:m-16 p-8 md:p-20 border border-white text-center">
       <h2 class="uppercase text-white text-3xl mb-6">{{ $oneupsection->heading }}</h2>
-      <p class="text-md md:text-2xl mb-8 text-white leading-normal">{{ $oneupsection->content }}</p>
+      <p class="text-md md:text-2xl mb-8 lg:mx-64 text-white leading-normal">{{ $oneupsection->content }}</p>
       <div class="pt-8 px-4"><img data-src="{{ $oneupsection->logo['url'] }}" alt="{{ $oneupsection->logo['alt'] }}" class="lozad h-16"></div>
     </div>
   </div>

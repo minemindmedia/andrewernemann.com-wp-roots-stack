@@ -2,8 +2,8 @@
     <div class="flex">
         <div class="my-8 mx-8 xl:m-16 p-8 md:p-16 border border-quaternary text-center text-primary">
             <h2 class="uppercase text-lg lg:text-3xl mb-6">{{ $who_we_are->heading }}</h2>
-            <div class="mx-8 xl:mx-80 text-md md:text-2xl mb-8 leading-normal">{!! $who_we_are->subheading !!}</div>
-            <div class="mx-8 xl:mx-80 text-md md:text-2xl mb-8 leading-normal">{!! $who_we_are->content !!}</div>
+            <div class="mx-8 text-md md:text-2xl mb-8 lg:mx-64 leading-normal">{!! $who_we_are->subheading !!}</div>
+            <div class="mx-8 text-md md:text-2xl mb-8 lg:mx-64 leading-normal">{!! $who_we_are->content !!}</div>
         </div>
     </div>
 </div>

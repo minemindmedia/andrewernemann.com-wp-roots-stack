@@ -16,7 +16,7 @@
     <div class="w-1/3 px-4 py-2 m-2">
       <div class="contact md:mr-8 md:mt-2">
         <i class="inline-block md:mr-3 float-right">
-          <a href="{{ $header->email_address }}">
+          <a href="" class="navModal_close contactModal_open">
           <img data-src="{{ $header->email }}" class="lozad block w-6 md:w-8 mr-auto mt-1">
           </a>
         </i> 

@@ -17,7 +17,7 @@
     @media (min-width: 1024px) {
       margin-bottom: 0.75rem;
       font-size: 22px;
-      color: red;
+      color: #696969;
     }
 
     &::placeholder {
@@ -34,7 +34,7 @@
   }
 
   input[type="button"] {
-    border: 1px solid #fff;
+    border: 1px solid #c4c4c4;
     background-color: transparent;
     color: black;
     text-transform: uppercase;
