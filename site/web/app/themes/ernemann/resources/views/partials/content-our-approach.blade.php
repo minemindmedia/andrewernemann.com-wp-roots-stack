@@ -79,17 +79,13 @@
         </div>
     </div>
 </div>
-<div class="text-white mt-0 py-0 w-screen h-full bg-cover lozad" data-background-image="{!! $covered->background !!}">
-    <div class="h-full bg-ae-green-bg">
-        <div class="flex">
-            <div class="relative m-8 lg:m-16 p-4 lg:p-16 text-center">
-                <h2 class="uppercase text-white text-xl lg:text-3xl mb-6">{{ $covered->heading }}</h2>
-                <p class="text-md md:text-2xl mb-8 lg:mx-64 text-white">{{ $covered->content }}</p>
-                <img data-src="@asset('images/flow.svg')" alt="" class="lozad">
-                <div class="mt-8 lg:mt-0 lg:absolute w-64 text-sm lg:text-lg lg:text-left" style="right:0; bottom: 3rem;">{{ $covered->disclaimer }}</div>
-            </div>
-        </div>
-    </div>
+
+<div class="md:hidden">
+    @include('partials.flow-mobile')
+</div>
+
+<div class="hidden md:block">
+    @include('partials.flow')
 </div>
 
 @include('partials.reach')

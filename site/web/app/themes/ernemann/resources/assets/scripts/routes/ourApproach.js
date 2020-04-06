@@ -1,7 +1,9 @@
-import Tabit from 'Tabit'
+import Tabit from 'Tabit';
+import AOS from 'aos';
 export default {
   init() {
     // JavaScript to be fired on the about us page
+    AOS.init();
 
     var _video = document.querySelector('video');
       function isScrolledIntoView( element ) {
@@ -26,6 +28,7 @@ export default {
     };
     const tabit = new Tabit(element, options); 
     return tabit;
+
 
     
   },
