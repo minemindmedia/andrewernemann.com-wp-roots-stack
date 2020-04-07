@@ -19,7 +19,7 @@
 
     <div class="flex">
         
-            <div class="relative text-center">
+            <div class="relative text-center block mx-auto">
 
             <!-- start -->
 

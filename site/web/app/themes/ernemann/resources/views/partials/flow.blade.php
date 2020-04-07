@@ -2,7 +2,7 @@
 
         
     <div class="flex">
-        <div class="relative m-8 lg:m-16 p-4 lg:p-16 text-center">
+        <div class="relative text-center block mx-auto my-16">
             <h2 class="uppercase text-white text-xl lg:text-3xl mb-6">{{ $covered->heading }}</h2>
             <p class="text-md md:text-2xl mb-8 lg:mx-64 text-white">{{ $covered->content }}</p>
         

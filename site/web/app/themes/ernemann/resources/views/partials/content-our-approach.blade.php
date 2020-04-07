@@ -80,11 +80,11 @@
     </div>
 </div>
 
-<div class="md:hidden">
+<div class="xxl:hidden">
     @include('partials.flow-mobile')
 </div>
 
-<div class="hidden md:block">
+<div class="hidden xxl:block">
     @include('partials.flow')
 </div>
 
