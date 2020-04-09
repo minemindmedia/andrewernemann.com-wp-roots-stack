@@ -176,13 +176,13 @@ module.exports = {
   |
   */
 
-  screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
-    'xxl': '1600px',
-  },
+ screens: {
+  'sm': '576px',
+  'md': '768px',
+  'lg': '992px',
+  'xl': '1328px',
+  'xxl': '1600px',
+},
 
 
   /*
@@ -495,6 +495,7 @@ module.exports = {
     '16': '4rem',
     '24': '6rem',
     '32': '8rem',
+    '40': '10rem',
     '48': '12rem',
     '64': '16rem',
     '64': '16rem',

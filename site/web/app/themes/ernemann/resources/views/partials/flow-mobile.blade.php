@@ -8,7 +8,7 @@
 
         <div class="flex justify-center">
             <div class="flex items-center">
-                <div class="w-full text-xs text-center">
+                <div class="w-full text-sm md:text-xl xxl:text-lg text-center">
                     <img src="@asset('images/flow-arrow-border.svg')" class="w-10 h-10 my-4">
                 </div>
             </div>
@@ -25,17 +25,17 @@
 
 
             <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="zoom-in"
-                data-aos-offset="200"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs text-center uppercase font-bold">(1)<br>Listing agreement</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(1)<br>Listing agreement</div>
                 </div>
             </div>
                
             <div class="flex justify-center">
                 <div class="flex items-center">
-                    <div class="w-full text-xs text-center">
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
                     </div>
                 </div>
@@ -43,60 +43,61 @@
             
 
             <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="100"
+                data-aos-delay="200"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Staging</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Staging</div>
                 </div>
 
 
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="zoom-in"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs text-center uppercase font-bold">(2)<br>Launch<br>Phase</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(2)<br>Launch<br>Phase</div>
                 </div>
 
 
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2"
                 data-aos="zoom-in"
-                data-aos-offset="200"
                 data-aos-delay="300"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Details and Documents</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Details and Documents</div>
                 </div>
             </div>
             <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="zoom-in"
-                data-aos-offset="200"
+                data-aos-delay="400"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Photoshoot</div>
+                </div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
                 data-aos-delay="500"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Photoshoot</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Video</div>
                 </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="zoom-in"
-                data-aos-offset="200"
+                data-aos-delay="600"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">3D Tour</div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
                 data-aos-delay="700"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Video</div>
-                </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="900"
-                >
-                    <div class="w-full text-xs">3D Tour</div>
-                </div>
-            </div>
-            <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="1100"
-                >
-                    <div class="w-full text-xs">Website</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Website</div>
                 </div>
             </div>
 
@@ -109,93 +110,97 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs text-center uppercase font-bold">(3)<br>Market Phase</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(3)<br>Market Phase</div>
                 </div>
             </div>
 
             <div class="flex justify-center">
-                <div class="flex h-24 w-24 m-2"></div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="zoom-in"
-                >
-                    <div class="w-full text-xs text-center uppercase font-bold">Public<br>Outreach<br>Option</div>
-                </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="100"
-                >
-                    <div class="w-full text-xs">Showings<br>Open Houses<br>Events</div>
-                </div>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="flex h-24 w-24 m-2"></div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="100"
-                >
-                    <div class="w-full text-xs">MLS, Zillow<br>& Sotheby's<br>Network<br>Exposure</div>
-                </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="100"
-                >
-                    <div class="w-full text-xs">Worldwide<br>Web<br>Exposure</div>
-                </div>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="flex h-24 w-24 m-2"></div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="100"
-                >
-                    <div class="w-full text-xs">Pring &<br>Digital<br>Advertising</div>
-                </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="100"
-                >
-                    <div class="w-full text-xs">Social<br>Media</div>
-                </div>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
-                data-aos="zoom-in"
-                data-aos-offset="200"
                 data-aos-delay="200"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Showings<br>Open Houses<br>Events</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Public<br>Outreach<br>Option</div>
                 </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="100"
+                data-aos-delay="800"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Showings<br>Open Houses<br>Events</div>
                 </div>
-                <div class="flex h-24 w-24 m-2"></div>
             </div>
 
             <div class="flex justify-center">
-                <div class="flex h-24 w-24 m-2"></div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="zoom-in"
-                data-aos-offset="200"
-                data-aos-delay="200"
+                data-aos-delay="100"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Select<br>Network<br>Awareness</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">MLS, Zillow<br>& Sotheby's<br>Network<br>Exposure</div>
                 </div>
-                <div class="flex h-24 w-24 m-2"></div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Worldwide<br>Web<br>Exposure</div>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Pring &<br>Digital<br>Advertising</div>
+                </div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Social<br>Media</div>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Showings<br>Open Houses<br>Events</div>
+                </div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
+                </div>
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Select<br>Network<br>Awareness</div>
+                </div>
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
             </div>
 
             <div class="flex justify-center">
@@ -207,34 +212,12 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="zoom-in"
-                data-aos-offset="200"
                 data-aos-delay="100"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs text-center uppercase font-bold">Regular<br>Seller<br>Updates</div>
-                </div>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="flex items-center">
-                    <div class="w-full text-center">
-                        <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
-                data-aos="zoom-in"
-                >
-                    <div class="w-full text-xs text-center uppercase font-bold">Contract<br>Negotiation</div>
-                </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
-                data-aos="zoom-in"
-                data-aos-delay="200"
-                >
-                    <div class="w-full text-xs text-center uppercase font-bold">Contingency<br>Process</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Regular<br>Seller<br>Updates</div>
                 </div>
             </div>
 
@@ -247,26 +230,55 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 w-24 m-2 bg-flow-green-mobile"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="zoom-in"
+                data-aos-delay="200"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs text-center uppercase font-bold">Closing</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contract<br>Negotiation</div>
+                </div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contingency<br>Process</div>
                 </div>
             </div>
 
-            <p class="w-2/3 mx-auto italic text-sm my-8 text-flow-green-mobile">Open houses, events and other public marketing efforts are subject to client preferences.<br><br>Showings are always accompanied.</p>
+            <div class="flex justify-center">
+                <div class="flex items-center">
+                    <div class="w-full text-center">
+                        <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
+                    </div>
+                </div>
+            </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="zoom-in"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Custom<br>Property<br>Website<br>Example</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Closing</div>
                 </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 w-24 m-2 text-center"
+            </div>
+
+            <p class="w-2/3 mx-auto italic text-sm md:text-xl xxl:text-lg my-8 text-flow-green-mobile">Open houses, events and other public marketing efforts are subject to client preferences.<br><br>Showings are always accompanied.</p>
+
+            <div class="flex justify-center">
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="zoom-in"
                 data-aos-delay="200"
+                data-aos-anchor-placement="top-center"
                 >
-                    <div class="w-full text-xs">Details<br>and<br>Documents<br>Example</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Custom<br>Property<br>Website<br>Example</div>
+                </div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                data-aos-anchor-placement="top-center"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Details<br>and<br>Documents<br>Example</div>
                 </div>
             </div>
 

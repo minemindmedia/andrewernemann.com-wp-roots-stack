@@ -3,7 +3,7 @@
         <div class="m-8 lg:m-16 mb-0 p-8 md:p-16 border border-quaternary text-center text-primary">
             <h2 class="uppercase text-xl lg:text-3xl mb-6">{{ $whyreport->heading }}</h2>
             <p class="lg:mx-48 text-md md:text-2xl mb-8 lg:mx-64 leading-normal">{!! $whyreport->content !!}</p>
-            <a href="{{ $whyreport->button_link }}" target="_blank">
+            <a href="" target="_blank" class="marketModal_open">
                 <button class="bg-white py-3 px-8 border border-quaternary uppercase text-lg">{{ $whyreport->button_text }}</button>
             </a>
             <p class="lg:mx-48 text-md md:text-2xl mb-8 lg:mx-64 mt-8 leading-normal">{!! $whyreport->subcontent !!}</p>
@@ -13,32 +13,28 @@
 
 
 <div class="flex content-center flex-wrap justify-center border border-quaternary m-8 lg:m-16 mt-8 lg:mt-0 p-8 text-center text-primary">
-    
+    <div class="w-full xl:w-3/5">
+        <div class="w-full h-full">
+            <div class="flex content-center flex-wrap justify-center h-full">
+                <h2 class="uppercase text-xl lg:text-3xl mb-4">{{ $whataride->heading }}</h2>
+                <p class="w-full text-md md:text-xl mb-4 leading-normal lg:px-16">— {!! $whataride->date !!} —</p>
+                <p class="text-md md:text-2xl mb-8 leading-normal lg:px-16">{!! $whataride->content !!}</p>
+            </div>
+        </div>
+    </div>
 
-        <div class="w-full lg:w-3/5">
-            <div class="w-full h-full">
-                <div class="flex content-center flex-wrap justify-center h-full">
-                    <h2 class="uppercase text-xl lg:text-3xl mb-4">{{ $whataride->heading }}</h2>
-                    <p class="w-full text-md md:text-xl mb-4 leading-normal lg:px-16">— {!! $whataride->date !!} —</p>
-                    <p class="text-md md:text-2xl mb-8 leading-normal lg:px-16">{!! $whataride->content !!}</p>
+    <div class="w-full xl:w-2/5">
+        <div class="lg:flex w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-16">
+            <div class="w-full lg:w-1/2">
+                <img data-src="{{ $whataride->thumbnail['url'] }}" alt="{{ $whataride->thumbnail['alt'] }}" class="lozad">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="flex content-center flex-wrap justify-end lg:justify-center h-full">
+                    <a class="block mx-auto py-3 px-6 mt-8 lg:mt-0 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{!! $whataride->button_text !!}</a>
                 </div>
             </div>
         </div>
-
-        <div class="w-full lg:w-2/5">
-            <div class="flex w-full lg:ml-8 px-4 md:px-8 py-8 lg:py-16">
-                <div class="w-1/2">
-                    <img data-src="{{ $whataride->thumbnail['url'] }}" alt="{{ $whataride->thumbnail['alt'] }}" class="lozad">
-                </div>
-                <div class="w-1/2">
-                    <div class="flex content-center flex-wrap justify-end lg:justify-center h-full">
-                        <a class="mrModal_open block py-3 px-6 border border-quaternary uppercase text-lg font-medium text-primary tracking-wider">{!! $whataride->button_text !!}</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    
+    </div>
 </div>
 
 
