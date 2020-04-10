@@ -29,7 +29,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="800"
+                data-aos-delay="1000"
                 data-aos-duration="1200"
                 data-aos-anchor-placement="top-center"
                 >
@@ -38,7 +38,12 @@
             </div>
                
             <div class="flex justify-center">
-                <div class="flex items-center">
+                <div class="flex items-center"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-anchor-placement="top-center"
+                >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
                     </div>
@@ -133,7 +138,12 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center">
+                <div class="flex items-center"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-anchor-placement="top-center"
+                >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
                     </div>
@@ -172,7 +182,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="1200"
+                data-aos-delay="1600"
                 data-aos-anchor-placement="top-center"
                 data-aos-anchor=".public-outreach"
                 data-aos-offset="50"
@@ -187,7 +197,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="1000"
+                data-aos-delay="1600"
                 data-aos-anchor-placement="top-center"
                 data-aos-anchor=".public-outreach"
                 data-aos-offset="50"
@@ -198,7 +208,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="1000"
+                data-aos-delay="1600"
                 data-aos-anchor-placement="top-center"
                 data-aos-anchor=".public-outreach"
                 data-aos-offset="50"
@@ -213,7 +223,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="1000"
+                data-aos-delay="1600"
                 data-aos-anchor-placement="top-center"
                 data-aos-anchor=".public-outreach"
                 data-aos-offset="50"
@@ -224,7 +234,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="1000"
+                data-aos-delay="1600"
                 data-aos-anchor-placement="top-center"
                 data-aos-anchor=".public-outreach"
                 data-aos-offset="50"
@@ -238,7 +248,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="1000"
+                data-aos-delay="1600"
                 data-aos-anchor-placement="top-center"
                 data-aos-anchor=".private-outreach"
                 data-aos-offset="50"
@@ -264,7 +274,7 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos="zoom-in"
-                data-aos-delay="1000"
+                data-aos-delay="1600"
                 data-aos-anchor-placement="top-center"
                 data-aos-anchor=".private-outreach"
                 data-aos-offset="50"
@@ -275,7 +285,12 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center">
+                <div class="flex items-center"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-anchor-placement="top-center"
+                >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
                     </div>
@@ -296,7 +311,12 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center">
+                <div class="flex items-center"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-anchor-placement="top-center"
+                >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
                     </div>
@@ -327,7 +347,12 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="flex items-center">
+                <div class="flex items-center"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-anchor-placement="top-center"
+                >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
                     </div>
