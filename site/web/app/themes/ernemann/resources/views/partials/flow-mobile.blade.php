@@ -29,7 +29,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(1)<br>Listing agreement</div>
                 </div>
@@ -40,7 +40,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -54,9 +54,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#launch-phase"
-                data-aos-delay="500"
+                data-aos-delay="100"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Staging</div>
                 </div>
@@ -66,7 +66,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div id="launch-phase" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(2)<br>Launch<br>Phase</div>
                 </div>
@@ -76,9 +76,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#launch-phase"
-                data-aos-delay="1000"
+                data-aos-delay="200"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Details and Documents</div>
                 </div>
@@ -88,9 +88,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#launch-phase"
-                data-aos-delay="1500"
+                data-aos-delay="300"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Photoshoot</div>
                 </div>
@@ -98,9 +98,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#launch-phase"
-                data-aos-delay="2000"
+                data-aos-delay="400"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Video</div>
                 </div>
@@ -108,9 +108,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#launch-phase"
-                data-aos-delay="2500"
+                data-aos-delay="500"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">3D Tour</div>
                 </div>
@@ -120,9 +120,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#launch-phase"
-                data-aos-delay="3000"
+                data-aos-delay="600"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Website</div>
                 </div>
@@ -133,7 +133,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -146,7 +146,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(3)<br>Market Phase</div>
                 </div>
@@ -158,7 +158,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div id="public-outreach" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Public<br>Outreach<br>Option</div>
                 </div>
@@ -167,9 +167,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#public-outreach"
-                data-aos-delay="500"
+                data-aos-delay="100"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Showings<br>Open Houses<br>Events</div>
                 </div>
@@ -181,9 +181,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#public-outreach"
-                data-aos-delay="1000"
+                data-aos-delay="200"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">MLS, Zillow<br>& Sotheby's<br>Network<br>Exposure</div>
                 </div>
@@ -191,9 +191,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#public-outreach"
-                data-aos-delay="1500"
+                data-aos-delay="300"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Worldwide<br>Web<br>Exposure</div>
                 </div>
@@ -205,9 +205,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#public-outreach"
-                data-aos-delay="2000"
+                data-aos-delay="400"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Pring &<br>Digital<br>Advertising</div>
                 </div>
@@ -215,9 +215,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#public-outreach"
-                data-aos-delay="2500"
+                data-aos-delay="500"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Social<br>Media</div>
                 </div>
@@ -228,9 +228,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#private-outreach"
-                data-aos-delay="500"
+                data-aos-delay="100"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Showings<br>Open Houses<br>Events</div>
                 </div>
@@ -238,7 +238,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div id="private-outreach" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
                 </div>
@@ -251,9 +251,9 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 data-aos-anchor="#private-outreach"
-                data-aos-delay="1000"
+                data-aos-delay="200"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Select<br>Network<br>Awareness</div>
                 </div>
@@ -265,7 +265,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -278,7 +278,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Regular<br>Seller<br>Updates</div>
                 </div>
@@ -289,7 +289,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -302,7 +302,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contract<br>Negotiation</div>
                 </div>
@@ -310,8 +310,8 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
-                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-delay="100"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contingency<br>Process</div>
                 </div>
@@ -322,7 +322,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -335,7 +335,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Closing</div>
                 </div>
@@ -348,7 +348,7 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
+                data-aos-duration="800"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Custom<br>Property<br>Website<br>Example</div>
                 </div>
@@ -356,8 +356,8 @@
                 data-aos="fade-in"
                 data-aos-mirror="false"
                 data-aos-once="true"
-                data-aos-duration="1250"
-                data-aos-delay="500"
+                data-aos-duration="800"
+                data-aos-delay="100"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Details<br>and<br>Documents<br>Example</div>
                 </div>
