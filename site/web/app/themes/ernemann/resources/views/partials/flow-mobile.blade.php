@@ -30,7 +30,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(1)<br>Listing agreement</div>
                 </div>
@@ -42,7 +41,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -57,7 +55,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#launch-phase"
                 data-aos-delay="500"
                 >
@@ -70,7 +67,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div id="launch-phase" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(2)<br>Launch<br>Phase</div>
                 </div>
@@ -81,7 +77,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#launch-phase"
                 data-aos-delay="1000"
                 >
@@ -94,7 +89,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#launch-phase"
                 data-aos-delay="1500"
                 >
@@ -105,7 +99,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#launch-phase"
                 data-aos-delay="2000"
                 >
@@ -116,7 +109,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#launch-phase"
                 data-aos-delay="2500"
                 >
@@ -129,7 +121,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#launch-phase"
                 data-aos-delay="3000"
                 >
@@ -143,7 +134,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -157,7 +147,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">(3)<br>Market Phase</div>
                 </div>
@@ -170,7 +159,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div id="public-outreach" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Public<br>Outreach<br>Option</div>
                 </div>
@@ -180,7 +168,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#public-outreach"
                 data-aos-delay="500"
                 >
@@ -195,7 +182,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#public-outreach"
                 data-aos-delay="1000"
                 >
@@ -206,7 +192,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#public-outreach"
                 data-aos-delay="1500"
                 >
@@ -221,7 +206,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#public-outreach"
                 data-aos-delay="2000"
                 >
@@ -232,7 +216,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#public-outreach"
                 data-aos-delay="2500"
                 >
@@ -246,7 +229,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#private-outreach"
                 data-aos-delay="500"
                 >
@@ -257,7 +239,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div id="private-outreach" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
                 </div>
@@ -271,7 +252,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-anchor="#private-outreach"
                 data-aos-delay="1000"
                 >
@@ -286,7 +266,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -300,7 +279,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Regular<br>Seller<br>Updates</div>
                 </div>
@@ -312,7 +290,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -326,7 +303,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contract<br>Negotiation</div>
                 </div>
@@ -335,7 +311,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-delay="500"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contingency<br>Process</div>
@@ -348,7 +323,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-center">
                         <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
@@ -362,7 +336,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Closing</div>
                 </div>
@@ -376,7 +349,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Custom<br>Property<br>Website<br>Example</div>
                 </div>
@@ -385,7 +357,6 @@
                 data-aos-mirror="false"
                 data-aos-once="true"
                 data-aos-duration="1250"
-                data-aos-anchor-placement="center-bottom"
                 data-aos-delay="500"
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Details<br>and<br>Documents<br>Example</div>
