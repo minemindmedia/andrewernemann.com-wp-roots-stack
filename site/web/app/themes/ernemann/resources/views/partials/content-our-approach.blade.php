@@ -31,9 +31,8 @@
     </div>
 </div>
 
-<div class="">
-    @include('partials.tabsxxx')
-</div>
+@include('partials.tabs')
+
 
 <div class="xxl:hidden">
     @include('partials.flow-mobile')

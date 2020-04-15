@@ -143,7 +143,35 @@
                 <div class="flex h-32 w-32 m-2"></div>
                 <div class="flex h-32 w-32 m-2"></div>
                 <div class="flex h-32 w-32 m-2"></div>
-                <div class="flex h-32 w-32 m-2"></div>
+                <div class="flex items-center border-solid border border-white h-32 w-32 m-2 text-center"
+                data-aos="fade-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-duration="800"
+                data-aos-anchor-placement="center-center"
+                data-aos-delay="200"
+                >
+                    <div class="w-full">Select<br>Network<br>Awareness</div>
+                </div>
+                <div class="flex items-center border-solid border border-white h-32 w-32 m-2 text-center"
+                data-aos="fade-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-duration="800"
+                data-aos-anchor-placement="center-center"
+                data-aos-delay="100"
+                >
+                    <div class="w-full">Showings<br>Open Houses<br>Events</div>
+                </div>
+                <div class="flex items-center h-32 w-32 m-2 bg-flow-green-opaque"
+                data-aos="fade-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-duration="800"
+                data-aos-anchor-placement="center-center"
+                >
+                    <div class="w-full text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
+                </div>
                 <div class="flex h-32 w-32 m-2"></div>
                 <div class="flex items-center h-32 w-32 m-2 bg-flow-green-opaque"
                 data-aos="fade-in"
@@ -206,39 +234,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-white h-32 w-32 m-2 text-center"
-                data-aos="fade-in"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-duration="800"
-                data-aos-anchor-placement="center-center"
-                data-aos-delay="200"
-                >
-                    <div class="w-full">Select<br>Network<br>Awareness</div>
-                </div>
-                <div class="flex items-center border-solid border border-white h-32 w-32 m-2 text-center"
-                data-aos="fade-in"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-duration="800"
-                data-aos-anchor-placement="center-center"
-                data-aos-delay="100"
-                >
-                    <div class="w-full">Showings<br>Open Houses<br>Events</div>
-                </div>
-                <div class="flex items-center h-32 w-32 m-2 bg-flow-green-opaque"
-                data-aos="fade-in"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-duration="800"
-                data-aos-anchor-placement="center-center"
-                >
-                    <div class="w-full text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
-                </div>
-                <div class="flex h-32 w-32 m-2"></div>
-                <div class="flex h-32 w-32 m-2"></div>
-            </div>
+            
 
             <div class="flex justify-center">
                 <div class="flex items-center"
@@ -272,7 +268,7 @@
                 data-aos-anchor-placement="center-center"
                 data-aos-delay="100"
                 >
-                    <div class="w-full text-center uppercase font-bold">(5)<br>Contract<br>Negotiation</div>
+                    <div class="w-full text-center uppercase font-bold">(5)<br>Contingency<br>Process</div>
                 </div>
                 <div class="flex items-center border-solid border border-white h-32 w-32 m-2 bg-flow-green-opaque"
                 data-aos="fade-in"
@@ -282,7 +278,7 @@
                 data-aos-anchor-placement="center-center"
                 data-aos-delay="200"
                 >
-                    <div class="w-full text-center uppercase font-bold">(6)<br>Contingency<br>Process</div>
+                    <div class="w-full text-center uppercase font-bold">(6)<br>Contract<br>Negotiation</div>
                 </div>
             </div>
 

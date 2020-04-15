@@ -153,6 +153,14 @@
             </div>
 
             <div class="flex justify-center">
+                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
+                data-aos="fade-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-duration="800"
+                >
+                    <div id="private-outreach" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
+                </div>
                 <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
                 <div class="public-outreach flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="fade-in"
@@ -163,6 +171,10 @@
                     <div id="public-outreach" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Public<br>Outreach<br>Option</div>
                 </div>
 
+                
+            </div>
+
+            <div class="flex justify-center">
                 <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="fade-in"
                 data-aos-mirror="false"
@@ -173,9 +185,6 @@
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Showings<br>Open Houses<br>Events</div>
                 </div>
-            </div>
-
-            <div class="flex justify-center">
                 <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
                 <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="fade-in"
@@ -187,6 +196,36 @@
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">MLS, Zillow<br>& Sotheby's<br>Network<br>Exposure</div>
                 </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="fade-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-duration="800"
+                data-aos-anchor="#private-outreach"
+                data-aos-delay="200"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Select<br>Network<br>Awareness</div>
+                </div>
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
+                data-aos="fade-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-duration="800"
+                data-aos-anchor="#private-outreach"
+                data-aos-delay="100"
+                >
+                    <div class="w-full text-sm md:text-xl xxl:text-lg">Showings<br>Open Houses<br>Events</div>
+                </div>
+
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
                 <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="fade-in"
                 data-aos-mirror="false"
@@ -201,6 +240,7 @@
 
             <div class="flex justify-center">
                 <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
                 <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="fade-in"
                 data-aos-mirror="false"
@@ -211,6 +251,11 @@
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg">Pring &<br>Digital<br>Advertising</div>
                 </div>
+            </div>
+
+            <div class="flex justify-center">
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
+                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
                 <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
                 data-aos="fade-in"
                 data-aos-mirror="false"
@@ -223,42 +268,9 @@
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
-                data-aos="fade-in"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-duration="800"
-                data-aos-anchor="#private-outreach"
-                data-aos-delay="100"
-                >
-                    <div class="w-full text-sm md:text-xl xxl:text-lg">Showings<br>Open Houses<br>Events</div>
-                </div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
-                data-aos="fade-in"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-duration="800"
-                >
-                    <div id="private-outreach" class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Private<br>Outreach<br>Option</div>
-                </div>
-                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
-            </div>
+           
 
-            <div class="flex justify-center">
-                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
-                <div class="flex items-center border-solid border border-flow-green-mobile text-flow-green-mobile h-24 md:h-40 w-24 md:w-40 m-2 text-center"
-                data-aos="fade-in"
-                data-aos-mirror="false"
-                data-aos-once="true"
-                data-aos-duration="800"
-                data-aos-anchor="#private-outreach"
-                data-aos-delay="200"
-                >
-                    <div class="w-full text-sm md:text-xl xxl:text-lg">Select<br>Network<br>Awareness</div>
-                </div>
-                <div class="flex h-24 md:h-40 w-24 md:w-40 m-2"></div>
-            </div>
+           
 
             <div class="flex justify-center">
                 <div class="flex items-center"
@@ -304,7 +316,7 @@
                 data-aos-once="true"
                 data-aos-duration="800"
                 >
-                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contract<br>Negotiation</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contingency<br>Process</div>
                 </div>
                 <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="fade-in"
@@ -313,7 +325,7 @@
                 data-aos-duration="800"
                 data-aos-delay="100"
                 >
-                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contingency<br>Process</div>
+                    <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contract<br>Negotiation</div>
                 </div>
             </div>
 
