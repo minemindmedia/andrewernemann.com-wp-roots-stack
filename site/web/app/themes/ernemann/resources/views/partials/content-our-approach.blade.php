@@ -31,17 +31,20 @@
     </div>
 </div>
 <div class="lg:m-16 mt-0" id="tabs">
-    <nav class="lg:flex text-center sm:border sm:border-tertiary">
-        <a href="#tab-1" class="block w-full lg:w-1/3 py-4 lg:py-12 no-underline uppercase text-secondary lg:text-3xl font-bold ">
-            {{ $tabs->one_title }}
+    <nav class="flex text-center sm:border sm:border-tertiary">
+        <a href="#tab-1" class="block w-1/3 py-4 lg:py-12 no-underline uppercase text-secondary text-sm lg:text-3xl font-bold ">
+            <div class="hidden md:block">{{ $tabs->one_title }}</div>
+            <div class="md:hidden inline-block mx-auto rounded-full h-12 w-12 flex items-center justify-center bg-secondary text-2xl text-white">1</div>
         <div class="icon"></div>
         </a>
-        <a href="#tab-2" class="block w-full lg:w-1/3 py-4 lg:py-12 no-underline uppercase text-secondary lg:text-3xl font-bold ">
-            {{ $tabs->two_title }}
+        <a href="#tab-2" class="block w-1/3 py-4 lg:py-12 no-underline uppercase text-secondary text-sm lg:text-3xl font-bold ">
+            <div class="hidden md:block">{{ $tabs->two_title }}</div>
+            <div class="md:hidden inline-block mx-auto rounded-full h-12 w-12 flex items-center justify-center bg-secondary text-2xl text-white">2</div>
         <div class="icon"></div>
         </a>
-        <a href="#tab-3" class="block w-full lg:w-1/3 py-4 lg:py-12 no-underline uppercase text-secondary lg:text-3xl font-bold ">
-            {{ $tabs->three_title }}
+        <a href="#tab-3" class="block w-1/3 py-4 lg:py-12 no-underline uppercase text-secondary text-sm lg:text-3xl font-bold ">
+            <div class="hidden md:block">{{ $tabs->three_title }}</div>
+            <div class="md:hidden inline-block mx-auto rounded-full h-12 w-12 flex items-center justify-center bg-secondary text-2xl text-white">3</div>
         <div class="icon"></div>
         </a>
     </nav>
