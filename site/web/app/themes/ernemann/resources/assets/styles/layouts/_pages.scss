@@ -1,3 +1,76 @@
+.tabbed-content {
+  .tabs {
+    display: none;
+  }
+
+  .item {
+    &::before {
+      content: attr(data-title);
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 2em 0 0 0;
+      color: #ed4e2e;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .item-content {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+
+    &.active {
+      .item-content {
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        cursor: default;
+      }
+    }
+  }
+}
+
+article {
+  section {
+    &:last-child {
+      padding-bottom: 2em;
+    }
+  }
+}
+
+@media all and (min-width: 800px) {
+  .tabbed-content {
+    .tabs {
+      display: block;
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: inline-block;
+
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .item {
+      min-height: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
 .andrew-play {
   svg {
     color: white;
@@ -31,7 +104,7 @@
     }
   }
 
-  .is-active {
+  .active {
     background-color: #f5f4ef;
 
     .icon {
