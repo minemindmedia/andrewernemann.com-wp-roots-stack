@@ -20,43 +20,43 @@ export default {
         }
       })
 
+    $('.tab_content').hide();
+    $('.tab_content:first').show();
 
-      tabControl();
+    /* if in tab mode */
+    $('ul.tabs li').click(function() {
+    
+      $('.tab_content').hide();
+      var activeTab = $(this).attr('rel'); 
+      $('#'+activeTab).fadeIn();		
+    
+      $('ul.tabs li').removeClass('active');
+      $(this).addClass('active');
 
-      var resizeTimer;
-      $(window).on('resize', function() {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function() {
-          tabControl();
-        }, 250);
-      });
+    $('.tab_drawer_heading').removeClass('d_active');
+    $('.tab_drawer_heading[rel^="'+activeTab+'"]').addClass('d_active');
+    
+    });
+    /* if in drawer mode */
+    $('.tab_drawer_heading').click(function() {
+        
+        $('.tab_content').hide();
+        var d_activeTab = $(this).attr('rel'); 
+        $('#'+d_activeTab).fadeIn();
       
-      function tabControl() {
-        var tabs = $('.tabbed-content').find('.tabs');
-        if(tabs.is(':visible')) {
-          tabs.find('a').on('click', function(event) {
-            event.preventDefault();
-            var target = $(this).attr('href'),
-                tabs = $(this).parents('.tabs'),
-                buttons = tabs.find('a'),
-                item = tabs.parents('.tabbed-content').find('.item');
-            buttons.removeClass('active');
-            item.removeClass('active');
-            $(this).addClass('active');
-            $(target).addClass('active');
-          });
-        } else {
-          $('.item').on('click', function() {
-            var container = $(this).parents('.tabbed-content'),
-                currId = $(this).attr('id'),
-                items = container.find('.item');
-            container.find('.tabs a').removeClass('active');
-            items.removeClass('active');
-            $(this).addClass('active');
-            container.find('.tabs a[href$="#'+ currId +'"]').addClass('active');
-          });
-        } 
-      }
+      $('.tab_drawer_heading').removeClass('d_active');
+        $(this).addClass('d_active');
+      
+      $('ul.tabs li').removeClass('active');
+      $('ul.tabs li[rel^="'+d_activeTab+'"]').addClass('active');
+      });
+    
+    
+    /* Extra class 'tab_last' 
+      to add border to right side
+      of last tab */
+    $('ul.tabs li').last().addClass('tab_last');
+	
 
 
     
