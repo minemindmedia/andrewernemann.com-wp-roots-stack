@@ -318,6 +318,10 @@
                 >
                     <div class="w-full text-sm md:text-xl xxl:text-lg text-center uppercase font-bold">Contingency<br>Process</div>
                 </div>
+                
+            </div>
+
+            <div class="flex justify-center">
                 <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="fade-in"
                 data-aos-mirror="false"
