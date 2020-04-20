@@ -1,89 +1,71 @@
-ul.tabs {
-  list-style-type: none;
-  padding: 0;
-  display: none;
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  @media (min-width: 992px) {
-    display: flex;
-  }
+.tabs label {
+  order: 1;
+  display: block;
+  cursor: pointer;
+  transition: background ease 0.2s;
+  width: 33.333333%;
 
-  li {
-    padding: 0;
-    margin: 0;
-    background-color: white;
-    float: right;
+  .icon {
+    background: url("../images/tabs-icon-active.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 0.7em auto;
 
-    .icon {
-      background: url("../images/tabs-icon-inactive.svg");
-      background-repeat: no-repeat;
+    @media (min-width: 1024px) {
       width: 50px;
       height: 50px;
-      margin: 0.7em auto;
-    }
-
-    &:hover {
-      background-color: white;
-    }
-  }
-
-  li.active {
-    background-color: #f5f4ef;
-    cursor: none;
-
-    .icon {
-      background: url("../images/tabs-icon-active.svg");
-      background-repeat: no-repeat;
-      width: 50px;
-      height: 50px;
-      margin: 0.7em auto;
     }
   }
 }
 
-.tab_drawer_heading { display: none; }
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+}
 
-@media (max-width: 992px) {
-  .tabs {
-    display: none;
-  }
+.tabs input[type="radio"] {
+  display: none;
+}
 
-  .tab_drawer_heading {
-    color: #ed4e2e;
-    margin: 0;
-    padding: 5px 20px;
-    display: block;
-    cursor: pointer;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-    border: none;
-    background-color: #f5f4ef;
-    padding-top: 1em;
+.tabs input[type="radio"]:checked + label {
+  background: #f5f4ef;
 
-    .icon {
-      background: url("../images/tabs-icon-inactive.svg");
-      background-repeat: no-repeat;
-      width: 30px;
-      height: 30px;
-      margin: 0.7em auto;
+  .icon {
+    background: url("../images/tabs-icon-inactive.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 0.7em auto;
+
+    @media (min-width: 1024px) {
+      width: 50px;
+      height: 50px;
     }
   }
+}
 
-  .d_active {
-    background-color: #f5f4ef;
-    color: #ed4e2e;
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
 
-    .icon {
-      background: url("../images/tabs-icon-active.svg");
-      background-repeat: no-repeat;
-      width: 30px;
-      height: 30px;
-      margin: 0.7em auto;
-    }
+@media (max-width: 1024px) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
   }
 }
 
