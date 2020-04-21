@@ -322,6 +322,19 @@
             </div>
 
             <div class="flex justify-center">
+                <div class="flex items-center"
+                data-aos="fade-in"
+                data-aos-mirror="false"
+                data-aos-once="true"
+                data-aos-duration="800"
+                >
+                    <div class="w-full text-center">
+                        <img src="@asset('images/flow-arrow-no-border-green.svg')" class="w-10 h-10 my-4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
                 <div class="flex items-center border-solid border border-flow-green-mobile text-white h-24 md:h-40 w-24 md:w-40 m-2 bg-flow-green-mobile"
                 data-aos="fade-in"
                 data-aos-mirror="false"
