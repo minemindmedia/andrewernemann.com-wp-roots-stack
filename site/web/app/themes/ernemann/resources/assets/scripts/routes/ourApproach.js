@@ -20,42 +20,56 @@ export default {
         }
       })
 
-    $('.tab_content').hide();
-    $('.tab_content:first').show();
+      var selectedTab = 0,
+      scrollDelay = 20,
+      scrollSpeed = 400,
+      scrolltopOffset = 100; 
 
-    /* if in tab mode */
-    $('ul.tabs li').click(function() {
-    
-      $('.tab_content').hide();
-      var activeTab = $(this).attr('rel'); 
-      $('#'+activeTab).fadeIn();		
-    
-      $('ul.tabs li').removeClass('active');
-      $(this).addClass('active');
-
-    $('.tab_drawer_heading').removeClass('d_active');
-    $('.tab_drawer_heading[rel^="'+activeTab+'"]').addClass('d_active');
-    
-    });
-    /* if in drawer mode */
-    $('.tab_drawer_heading').click(function() {
-        
-        $('.tab_content').hide();
-        var d_activeTab = $(this).attr('rel'); 
-        $('#'+d_activeTab).fadeIn();
-      
-      $('.tab_drawer_heading').removeClass('d_active');
-        $(this).addClass('d_active');
-      
-      $('ul.tabs li').removeClass('active');
-      $('ul.tabs li[rel^="'+d_activeTab+'"]').addClass('active');
+      $('#tabs').children().each(function (i) {
+      i = i + 1;
+      $(this).attr('id', 'tab-' + i).addClass('tab').wrapInner(
+          '<div class="tab-wrapper"></div>').append(
+            '<div class="icon"></div>');
       });
-    
-    
-    /* Extra class 'tab_last' 
-      to add border to right side
-      of last tab */
-    $('ul.tabs li').last().addClass('tab_last');
+      var count = $('#tabs').children().length;
+      var tab_width = (100 / count) + '%';
+      $('#tabs li').css('width', tab_width).eq(0).addClass('first').end().eq(-1).addClass(
+      'last').end();
+      $('#panels').children().each(function (i) {
+      i = i + 1;
+      $(this).attr('id', 'panel-' + i).addClass('panel').wrapInner(
+          '<div class="panel-wrapper"></div>').prepend(
+          '<div class="accordion-tab"></div>');
+      });
+      $('.accordion-tab').each(function (i) {
+      i = i + 1;
+      var tab_name = $('#tab-' + i).html();
+      $(this).html(tab_name);
+      });
+      $('#tabs').children().eq(selectedTab).addClass('xactive');
+      $('#panels').children().eq(selectedTab).addClass('xactive');
+      $('#tabs > li').click(function () {
+      $('#tabs > li, #panels > li').removeClass('xactive');
+      $('#panels > li').eq($(this).index()).toggleClass('xactive');
+      $(this).toggleClass('xactive');
+      });
+      $('.accordion-tab').click(function () {
+      $('#tabs > li, #panels > li').removeClass('xactive');
+      $('#tabs > li').eq($(this).parent().index()).toggleClass('xactive');
+      $(this).parent().toggleClass('xactive');
+      });
+      $('.tab, .accordion-tab').click(function () {
+      $('html,body').delay(scrollDelay).animate({
+          scrollTop: $(this).offset().top - scrolltopOffset,
+      }, scrollSpeed);
+      });
+      $('body,html').bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup',
+
+      function (e) {
+      if (e.which > 0 || e.type == 'mousedown' || e.type == 'mousewheel') {
+          $('html,body').stop();
+      }
+      })
 	
 
 

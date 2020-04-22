@@ -3127,6 +3127,11 @@ easy-extender@^2.3.4:
   dependencies:
     lodash "^4.17.10"
 
+easy-responsive-tabs@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/easy-responsive-tabs/-/easy-responsive-tabs-0.0.2.tgz#8ea5e2bc501d77c3d7055e3c2e152516d5e482aa"
+  integrity sha1-jqXivFAdd8PXBV48LhUlFtXkgqo=
+
 eazy-logger@^3:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/eazy-logger/-/eazy-logger-3.0.2.tgz#a325aa5e53d13a2225889b2ac4113b2b9636f4fc"
